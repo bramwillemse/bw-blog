@@ -1,0 +1,182 @@
+{
+  "name": "roots/bedrock",
+  "type": "project",
+  "license": "MIT",
+  "description": "A modern WordPress stack",
+  "homepage": "https://roots.io/bedrock/",
+  "authors": [
+    {
+      "name": "Scott Walkinshaw",
+      "email": "scott.walkinshaw@gmail.com",
+      "homepage": "https://github.com/swalkinshaw"
+    },
+    {
+      "name": "Ben Word",
+      "email": "ben@benword.com",
+      "homepage": "https://github.com/retlehs"
+    }
+  ],
+  "keywords": [
+    "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp"
+  ],
+  "support": {
+    "issues": "https://github.com/roots/bedrock/issues",
+    "forum": "https://discourse.roots.io/category/bedrock"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "wordpress/wordpress",
+        "version": "4.1",
+        "type": "webroot",
+        "dist": {
+          "type": "zip",
+          "url": "http://nl.wordpress.org/wordpress-4.1-nl_NL.zip"
+        },
+        "require" : {
+          "fancyguy/webroot-installer": "*"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "advanced-custom-fields/acf-pro",
+        "type": "wordpress-plugin",
+        "version": "5.1.5",
+        "dist": {
+          "type": "zip",
+          "url": "http://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9MzM5OTN8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE0LTA3LTA5IDEwOjAwOjEz"
+        },
+        "require" : {
+          "composer/installers": "*"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "deliciousbrains/wp-migrate-db-pro",
+        "version": "1.6",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-latest.zip?licence_key=f18a15ff-0c4d-400f-aea5-a9f4bd0d2fa4&site_url=bramwillemse.nl"
+        },
+        "require" : {
+          "composer/installers": "*"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "deliciousbrains/wp-migrate-db-pro-media-files",
+        "version": "1.4.4",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://deliciousbrains.com/?wc-api=delicious-brains&request=download&licence_key=f18a15ff-0c4d-400f-aea5-a9f4bd0d2fa4&slug=wp-migrate-db-pro-media-files&site_url=bramwillemse.nl"
+        },
+        "require" : {
+          "composer/installers": "*"
+        }
+      }
+    },    
+    {
+      "type": "package",
+      "package": {
+        "name": "rocketgenius/gravityforms",
+        "version": "1.8.17",
+        "type": "wordpress-plugin",
+        "dist":{
+          "type":"zip",
+          "url": "http://s3.amazonaws.com/gravityforms/releases/gravityforms_1.8.17.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1411812091&Signature=YZjQvfuIV2ZhySSdvTo6wuXjLnI%3D"
+        },
+        "require" : {
+          "composer/installers": "*"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "norcross/airplane-mode",
+        "type": "wordpress-plugin",
+        "version": "0.0.1",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/norcross/airplane-mode/archive/master.zip"
+        },
+        "require" : {
+          "composer/installers": "*"
+        }
+      }  
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "bramwillemse/chram-base",
+        "type": "wordpress-plugin",
+        "version": "0.3",
+        "dist": {
+          "type": "zip",
+          "url":  "https://bitbucket.org/bramwillemse/chram-base/get/15d69233c385.zip"
+        },
+        "require" : {
+          "composer/installers": "*"
+        }
+      }
+    }
+  ],
+  "require": {
+    "php": ">=5.5",
+    "composer/installers": "~1.0.12",
+    "vlucas/phpdotenv": "^2.0.1",
+    "johnpbloch/wordpress": "4.5.2",
+    "oscarotero/env": "^1.0",
+    "roots/wp-password-bcrypt": "1.0.0",
+      "advanced-custom-fields/acf-pro": "5.1.5",
+      "deliciousbrains/wp-migrate-db-pro": "*",
+      "deliciousbrains/wp-migrate-db-pro-media-files": "*",
+      "wpackagist-plugin/ewww-image-optimizer": "*",
+      "wpackagist-plugin/iwp-client": "*",
+      "wpackagist-plugin/regenerate-thumbnails": "*",
+      "wpackagist-plugin/search-and-replace": "*",
+      "wpackagist-plugin/simple-page-ordering": "*",
+      "wpackagist-plugin/wordpress-importer": "*",
+      "wpackagist-plugin/wordpress-seo": "*",
+      "wpackagist-plugin/disqus-comment-system": "*",
+      "norcross/airplane-mode": "*",
+      "wpackagist-plugin/debug-bar": "*",
+      "wpackagist-plugin/debug-bar-console": "*",
+      "roots/wp-stage-switcher": "1.0.1",
+      "wpackagist-plugin/google-analytics-for-wordpress": "*",
+      "wpackagist-plugin/post-thumbnail-editor": "*",
+      "wpackagist-plugin/wp-super-cache": "*"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^2.5.1"
+  },
+  "extra": {
+    "installer-paths": {
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "web/wp"
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpcs --ignore=web/wp/,vendor/ -n -s ."
+    ]
+  }
+}
