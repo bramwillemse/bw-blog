@@ -327,15 +327,15 @@
 	"expanded_folders":
 	[
 		"/Users/bramwillemse/Dropbox/Sites/brw",
-		"/Users/bramwillemse/Dropbox/Sites/brw/web",
-		"/Users/bramwillemse/Dropbox/Sites/brw/web/app"
+		"/Users/bramwillemse/Dropbox/Sites/brw/web"
 	],
 	"file_history":
 	[
+		"/Users/bramwillemse/Dropbox/Sites/brw/composer.json",
+		"/Users/bramwillemse/Dropbox/Sites/brw/web/index.php",
 		"/Users/bramwillemse/Dropbox/Sites/brw/brw-theme.sublime-project",
 		"/Users/bramwillemse/Dropbox/Sites/_sublime projects/brw.sublime-project",
 		"/Users/bramwillemse/Dropbox/Sites/brw/README.md",
-		"/Users/bramwillemse/Dropbox/Sites/brw/composer.json",
 		"/Users/bramwillemse/Dropbox/Sites/brw/.gitignore",
 		"/Users/bramwillemse/Dropbox/Sites/brw/.git/config",
 		"/Users/bramwillemse/Dropbox/Sites/brw/web/src/index.html",
@@ -458,8 +458,7 @@
 		"/Users/bramwillemse/Dropbox/Sites/hma/web/html/_/partials/gallery.php",
 		"/Users/bramwillemse/Dropbox/Sites/hma/web/wp/wp-content/themes/twentyeleven/content-gallery.php",
 		"/Users/bramwillemse/Dropbox/Sites/hma/web/html/_/scss/vendor/_slick.scss",
-		"/Users/bramwillemse/Dropbox/Sites/hma/web/html/_/fonts/slick.svg",
-		"/Users/bramwillemse/Dropbox/Sites/hma/web/html/_/scss/vendor/_slick-theme.scss"
+		"/Users/bramwillemse/Dropbox/Sites/hma/web/html/_/fonts/slick.svg"
 	],
 	"find":
 	{
@@ -1208,9 +1207,13 @@
 	"select_project":
 	{
 		"height": 751.0,
-		"last_filter": "brw",
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"~/Dropbox/Sites/brw/brw-theme.sublime-project"
+			],
 			[
 				"brw",
 				"~/Dropbox/Sites/_sublime projects/rer.sublime-workspace"
@@ -1338,10 +1341,6 @@
 			[
 				"heat.",
 				"~/Dropbox/Sites/_sublime projects/heat.sublime-project"
-			],
-			[
-				"",
-				"~/Dropbox/Sites/_sublime projects/base.sublime-project"
 			],
 			[
 				"product",
