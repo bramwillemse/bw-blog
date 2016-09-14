@@ -4,6 +4,7 @@ web/app/plugins/*
 web/app/mu-plugins/*/
 web/app/upgrade
 web/app/uploads/*
+web/app/ewww
 !web/app/uploads/.gitkeep
 
 # WordPress
@@ -36,3 +37,5 @@ bin
 
 # Misc
 _assets/*
+brw.sublime-workspace
+brw-theme.sublime-workspace
