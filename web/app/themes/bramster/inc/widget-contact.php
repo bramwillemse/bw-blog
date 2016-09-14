@@ -1,28 +1,23 @@
 <?php // Create widget "Contact"
 class ContactWidget extends WP_Widget {
-	function ContactWidget() {
-		// description
-		$widget_ops = array(
-			'classname' => 'widget-contact', 
-			'description' => 'Deze Widget geeft de "Contact", met interne link weer. Deze kun je bij "Opties" invullen.' 
+
+	function __construct() {
+		parent::__construct(
+			'ContactWidget', // Base ID
+			__( 'Contactgegevens', 'text_domain' ), // Name
+			array( 
+				'classname' => 'widget-contact', 
+				'description' => __( 'Deze Widget geeft de "Contact", met interne link weer. Deze kun je bij "Opties" invullen.', 'text_domain' ), 
+			) // Args
 		);
-		// title
-		$this->WP_Widget('ContactWidget', 'Contactgegevens', $widget_ops);
 	}
-	
-	function form($instance) {
-		if ( function_exists('get_field') ) :
-			if ( get_field('widget-contact', 'options') ) :
-				the_field('widget-contact', 'options');
-			endif;
-		endif;
-	}
-	
-	function update($new_instance, $old_instance) {
-		$instance = $old_instance;
-		return $instance;
-	}
-	
+
+	/**
+	 * Outputs the content of the widget
+	 *
+	 * @param array $args
+	 * @param array $instance
+	 */
 	function widget($args, $instance) {
 		extract($args, EXTR_SKIP);
 	
@@ -43,5 +38,32 @@ class ContactWidget extends WP_Widget {
 			</aside>
 		<?php
 	}	 
+	
+	/**
+	 * Outputs the options form on admin
+	 *
+	 * @param array $instance The widget options
+	 */	
+	function form($instance) {
+		if ( function_exists('get_field') ) :
+			if ( get_field('widget-contact', 'options') ) :
+				the_field('widget-contact', 'options');
+			endif;
+		endif;
+	}
+	
+
+	/**
+	 * Processing widget options on save
+	 *
+	 * @param array $new_instance The new options
+	 * @param array $old_instance The previous options
+	 */
+	function update($new_instance, $old_instance) {
+		$instance = $old_instance;
+		return $instance;
+	}
+	
+
 }
 ?>
