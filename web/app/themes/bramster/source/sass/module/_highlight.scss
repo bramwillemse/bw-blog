@@ -1,0 +1,23 @@
+a.highlight { 
+	display: inline-block; 
+
+	background: $first;
+	padding: 0.1em 0.5em; 
+
+	color: $white;
+	text-align: center;
+	cursor: pointer;
+
+	// Transitions
+	@include transition(background-color 0.15s);
+	@include transition(color 0.15s);
+
+	&:hover,
+	&:focus { 
+		background-color: lighten($first,12.5%); 
+		text-decoration: none; 	
+	}
+	&:active {
+		background-color: darken($first,5%);
+	}
+}

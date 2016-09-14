@@ -1,0 +1,14 @@
+.widget {
+	margin-bottom: $vertical-margin * 2;
+
+	ul {
+		li {
+			list-style: none;
+			margin-bottom: 0.5em;
+		}
+	}
+
+	@include breakpoint(medium) {
+		margin-top: 0.25em;
+	}
+}

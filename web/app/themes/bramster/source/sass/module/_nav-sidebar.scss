@@ -1,0 +1,50 @@
+.nav-sidebar {
+	@include grid(48,2);
+
+	text-align: left; 
+
+	h2 { 
+	 	display:none;
+	}
+	li {
+		
+		display: inline;
+		display: inline-block;
+
+		margin-bottom: 0.5em;
+		list-style-type: none;
+	
+		a {
+			padding: 0.25em 0.5em;
+			
+			@include font-size($font-normal);
+
+			&:hover,
+			&:focus {
+				background-color: lighten($first,12.5%);
+			}
+			&:active {
+				background-color: darken($first,5%);
+			}
+		}
+		&.current-cat a,
+		&.current-menu-item a,
+		&.current_page_item a { 
+			background: $first; 
+			color: $white;
+		}
+		@include breakpoint(medium) {
+			float: right;
+			clear: both;
+		}
+
+	}
+
+
+	// Media Queries
+	@include breakpoint(medium) {
+		@include grid(12,0.5);
+
+		text-align: right; 
+	}
+}

@@ -1,0 +1,10 @@
+.lead {
+	font-family: $skolar;
+	font-weight: 600;
+	color: darken($grey, 25%);
+
+	@include breakpoint(medium) {
+		@include font-size($font-medium);
+		margin-bottom: 1em / $font-medium;
+	}
+}

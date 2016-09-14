@@ -1,0 +1,30 @@
+.article {
+	@include grid(48);
+	position: relative;
+	clear: both;	
+
+	background: $white;
+	
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.content .article {
+	margin-bottom: $vertical-margin * 4;
+}
+
+.article-about .lead,
+.article-about .lead:last-child {
+	margin-bottom: $vertical-margin;
+}
+
+@include breakpoint(small) {
+	.article-about {
+		.lead,
+		.lead:last-child {
+			margin-bottom: $vertical-margin/$font-medium;
+		}
+	}
+
+}

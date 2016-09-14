@@ -1,0 +1,19 @@
+a.more-link {
+	background-color: $first;
+	// @include border-radius($border-radius);
+
+	font-weight: 600;
+	color: $white;
+	&:hover,
+	&:focus {
+		background-color: lighten($first,12.5%); 
+		// color: $black;
+	}
+	&:active {
+		background-color: darken($first,5%);
+	}
+
+	// Transition
+	@include transition-property(background-color);
+	@include transition-duration(0.15s);
+}

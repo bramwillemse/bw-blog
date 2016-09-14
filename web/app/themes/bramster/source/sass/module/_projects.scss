@@ -1,0 +1,4 @@
+.projects {
+	@include grid(48);
+	margin-bottom: $vertical-margin * 2;
+}

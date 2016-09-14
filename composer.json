@@ -34,27 +34,12 @@
     {
       "type": "package",
       "package": {
-        "name": "wordpress/wordpress",
-        "version": "4.1",
-        "type": "webroot",
-        "dist": {
-          "type": "zip",
-          "url": "http://nl.wordpress.org/wordpress-4.1-nl_NL.zip"
-        },
-        "require" : {
-          "fancyguy/webroot-installer": "*"
-        }
-      }
-    },
-    {
-      "type": "package",
-      "package": {
         "name": "advanced-custom-fields/acf-pro",
         "type": "wordpress-plugin",
         "version": "5.1.5",
         "dist": {
           "type": "zip",
-          "url": "http://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9MzM5OTN8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE0LTA3LTA5IDEwOjAwOjEz"
+          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9MzM5OTN8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE0LTA3LTA5IDEwOjAwOjEz"
         },
         "require" : {
           "composer/installers": "*"
@@ -99,7 +84,7 @@
         "type": "wordpress-plugin",
         "dist":{
           "type":"zip",
-          "url": "http://s3.amazonaws.com/gravityforms/releases/gravityforms_1.8.17.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1411812091&Signature=YZjQvfuIV2ZhySSdvTo6wuXjLnI%3D"
+          "url": "https://s3.amazonaws.com/gravityforms/releases/gravityforms_1.8.17.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1411812091&Signature=YZjQvfuIV2ZhySSdvTo6wuXjLnI%3D"
         },
         "require" : {
           "composer/installers": "*"
@@ -141,26 +126,21 @@
     "php": ">=5.5",
     "composer/installers": "~1.0.12",
     "vlucas/phpdotenv": "^2.0.1",
-    "johnpbloch/wordpress": "4.5.2",
+    "johnpbloch/wordpress": "4.6",
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
-      "advanced-custom-fields/acf-pro": "5.1.5",
+      "advanced-custom-fields/acf-pro": "*",
       "deliciousbrains/wp-migrate-db-pro": "*",
       "deliciousbrains/wp-migrate-db-pro-media-files": "*",
       "wpackagist-plugin/ewww-image-optimizer": "*",
       "wpackagist-plugin/iwp-client": "*",
-      "wpackagist-plugin/regenerate-thumbnails": "*",
-      "wpackagist-plugin/search-and-replace": "*",
-      "wpackagist-plugin/simple-page-ordering": "*",
       "wpackagist-plugin/wordpress-importer": "*",
       "wpackagist-plugin/wordpress-seo": "*",
       "wpackagist-plugin/disqus-comment-system": "*",
       "norcross/airplane-mode": "*",
       "wpackagist-plugin/debug-bar": "*",
       "wpackagist-plugin/debug-bar-console": "*",
-      "roots/wp-stage-switcher": "1.0.1",
       "wpackagist-plugin/google-analytics-for-wordpress": "*",
-      "wpackagist-plugin/post-thumbnail-editor": "*",
       "wpackagist-plugin/wp-super-cache": "*"
   },
   "require-dev": {

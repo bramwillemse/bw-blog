@@ -1,0 +1,6 @@
+.widget-left {
+
+	@include breakpoint(medium) {
+		text-align: right;
+	}
+}

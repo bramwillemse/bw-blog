@@ -1,0 +1,30 @@
+.postmetadata { 
+	@include grid(48);
+	// margin-bottom: $vertical-margin;
+
+	a { 
+		float: left;
+
+		padding: 0.333em 0.5em; 
+		background-color: $grey;
+
+		@include transition(all 0.15s ease);
+		// transition: background-color 0.15s;
+		// -moz-transition: background-color 0.15s;
+		// -ms-transition: background-color 0.15s;
+		// -o-transition: background-color 0.15s;
+		// -webkit-transition: background-color 0.15s;
+		
+		color: $white;
+		text-transform: lowercase;
+		
+		&:hover { 
+			text-decoration: none; 
+			color: $white; 
+			background-color: lighten($first,12.5%); 
+		}
+		&:active {
+			background-color: darken($first,5%);
+		}
+	}
+}

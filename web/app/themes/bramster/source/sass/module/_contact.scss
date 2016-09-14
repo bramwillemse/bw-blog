@@ -1,0 +1,19 @@
+.contact { 
+	text-align: right; 
+
+	ul { 
+		li {
+		}
+	}
+	a { 
+		padding: 0.3em;
+		background: $grey; 
+		color: $white; 
+		&:hover { 
+			background: $first; 
+			color: $white; 
+			text-decoration: none; 
+		}
+	}
+}
+

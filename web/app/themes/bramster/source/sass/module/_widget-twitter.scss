@@ -1,0 +1,42 @@
+.widget-twitter {
+	img {
+		float: left;
+		margin: 0 0.7em 0 0;
+	}
+	ul {
+		@include font-size($font-normal);
+
+		// MEDIA QUERIES
+		@media screen and (min-width: 1024px ) {
+			@include font-size($font-small);
+		}
+		@media screen and (min-width: 1280px ) {
+			@include font-size($font-normal);
+		}
+	}
+	li {
+		padding: 0.6em 0.6em 0.6em 0.5em;
+		border-left: 0.2em solid lighten($grey,50%);
+
+		color: $grey;
+
+		a {
+			color: $grey;
+			text-decoration: none;
+			&:hover {
+				color: $first;
+			}
+		}
+
+		.tweet_time a {
+			@include font-size($font-small);
+			font-style: italic;
+			font-weight: normal;
+		}
+		&:hover {
+			border-left: 0.2em solid lighten($grey,33.333);
+		}	
+	}
+
+
+}

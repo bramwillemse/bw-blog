@@ -1,0 +1,44 @@
+.navigation { 
+	@include grid(48);
+	margin: $vertical-margin * 3 0 0;
+
+	@include transition(background-color 0.15s);
+	
+	@include font-size($font-normal, 1);
+	color: $white;
+	text-align: center;
+	text-transform: lowercase;
+
+	a,
+	span.current { 
+		float: none;
+		display: inline;
+		display: inline-block;
+		margin: 0;
+
+		background-color: $grey;
+		padding: 0.333em 0.5em; 
+		
+		color: $white; 
+	}
+	a:hover { 
+		background: $first;
+		text-decoration: none;
+	}
+	span.current {
+		color: $grey; 
+		background: $second;
+		text-decoration: none;
+	}
+	.prev { 
+		float: left; 
+	}
+	.dots {
+		background-color: transparent;
+		color: $grey;
+	}
+	.next {
+		float: right;
+	}
+
+}

@@ -1,0 +1,12 @@
+.date {
+	float: left;
+	margin-right: 0.333em;
+
+	font-family: $skolar;
+	white-space: nowrap;
+	color: $black;
+
+	@include breakpoint(medium) {
+		@include font-size($font-medium);
+	}
+}

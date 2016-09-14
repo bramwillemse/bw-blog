@@ -1,0 +1,24 @@
+.highlight-callout {
+	display: inline-block; 
+
+	background: $second; 
+	padding: 0.1em 0.5em; 
+
+	color: $black;
+	text-align: center;
+	cursor: pointer;
+
+	// Transitions
+	@include transition(background-color 0.15s);
+	@include transition(color 0.15s);	
+
+	&:hover { 
+		background: $first; 
+		color: $white;
+		text-decoration: none; 
+	}
+
+	&:active {
+		background: darken($first,5%);
+	}
+}

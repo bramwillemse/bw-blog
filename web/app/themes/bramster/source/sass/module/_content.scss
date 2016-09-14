@@ -1,0 +1,9 @@
+.content {
+	float: right;
+	margin-bottom: $vertical-margin * 2;
+
+	// MEDIA QUERIES
+	@include breakpoint(normal) {
+		float: right;
+	}
+}

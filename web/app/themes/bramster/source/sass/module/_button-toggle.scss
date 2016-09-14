@@ -1,0 +1,37 @@
+.button-toggle {
+	display: block;
+	position: absolute;
+	top: 0.8em;
+	right: 0.5em;
+	margin: 0;
+	z-index: 98;
+
+ 	padding: 0.3em 0.6em;
+	border: 1px solid $grey;
+	background: transparent;
+	
+	font-family: $skolar;
+	@include font-size($font-medium);
+	font-weight: 600;
+	text-align: center;
+	text-transform: lowercase;
+	line-height: 1em;
+	color: $grey;
+
+	&:hover,
+	&:focus {		
+		background: transparent;
+		border: 1px solid lighten($first,12.5%);
+
+		color: lighten($first,12.5%);
+		cursor: pointer;
+	}
+	&:active {
+		color: darken($first, 5%);
+		border: 1px solid darken($first, 5%);
+	}
+
+	@include breakpoint(small) {
+		display: none;
+	}
+}

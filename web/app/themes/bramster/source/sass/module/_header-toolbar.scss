@@ -1,0 +1,25 @@
+.header-toolbar {	
+	background: $white;
+
+	// border-bottom: darken($grey,25%) 1px solid;	
+	
+	@include breakpoint(small) {
+		padding-bottom: $vertical-margin * 2;
+	}
+
+	@include breakpoint(medium) {
+		padding-top: $vertical-margin * 2;
+	}
+}
+
+.single sheader-toolbar,
+.page .header-toolbar {
+	margin-bottom: 0;
+}
+.portfolio .header-toolbar {
+	// margin-bottom: $vertical-margin * 2;
+}
+
+.blog .header-toolbar {
+	margin-bottom: $vertical-margin;
+}

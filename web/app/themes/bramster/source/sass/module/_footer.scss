@@ -1,0 +1,49 @@
+.footer {
+	padding: 3em 1em;
+	background-color: red;
+
+	@include font-size($font-small, 1.5);
+	color: $white;
+	text-align: center;
+
+	h3 { 
+		color: $white;
+	}
+
+	a { 
+		padding: 0.25em 0.5em;
+		background: $first; 
+
+		color: $white;
+
+		// Transitions
+		@include transition(background-color 0.15s);
+		@include transition(color 0.15s);
+
+		&:hover,
+		&:focus { 
+			background-color: lighten($first,12.5%); 
+			text-decoration: none; 	
+		}
+		&:active {
+			background-color: darken($first,5%);
+		}
+
+		&.rss { 
+			background: $second; 
+			
+			color: $black; 
+			text-decoration: none; 
+
+			&:hover,
+			&:focus { 
+				background: lighten($second,5%);
+				text-decoration: none; 
+			}
+
+			&:active {
+				background: darken($second,12.5%);
+			}			
+		}		
+	}
+}
