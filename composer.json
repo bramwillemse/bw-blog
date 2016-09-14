@@ -36,7 +36,7 @@
       "package": {
         "name": "advanced-custom-fields/acf-pro",
         "type": "wordpress-plugin",
-        "version": "5.1.5",
+        "version": "5.4.5",
         "dist": {
           "type": "zip",
           "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9MzM5OTN8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE0LTA3LTA5IDEwOjAwOjEz"
@@ -50,7 +50,7 @@
       "type": "package",
       "package": {
         "name": "deliciousbrains/wp-migrate-db-pro",
-        "version": "1.6",
+        "version": "1.6.1",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
@@ -65,7 +65,7 @@
       "type": "package",
       "package": {
         "name": "deliciousbrains/wp-migrate-db-pro-media-files",
-        "version": "1.4.4",
+        "version": "1.4.5",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
@@ -75,36 +75,6 @@
           "composer/installers": "*"
         }
       }
-    },    
-    {
-      "type": "package",
-      "package": {
-        "name": "rocketgenius/gravityforms",
-        "version": "1.8.17",
-        "type": "wordpress-plugin",
-        "dist":{
-          "type":"zip",
-          "url": "https://s3.amazonaws.com/gravityforms/releases/gravityforms_1.8.17.zip?AWSAccessKeyId=1603BBK66770VCSCJSG2&Expires=1411812091&Signature=YZjQvfuIV2ZhySSdvTo6wuXjLnI%3D"
-        },
-        "require" : {
-          "composer/installers": "*"
-        }
-      }
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "norcross/airplane-mode",
-        "type": "wordpress-plugin",
-        "version": "0.0.1",
-        "dist": {
-          "type": "zip",
-          "url": "https://github.com/norcross/airplane-mode/archive/master.zip"
-        },
-        "require" : {
-          "composer/installers": "*"
-        }
-      }  
     },
     {
       "type": "package",
@@ -135,11 +105,7 @@
       "wpackagist-plugin/ewww-image-optimizer": "*",
       "wpackagist-plugin/iwp-client": "*",
       "wpackagist-plugin/wordpress-importer": "*",
-      "wpackagist-plugin/wordpress-seo": "*",
       "wpackagist-plugin/disqus-comment-system": "*",
-      "norcross/airplane-mode": "*",
-      "wpackagist-plugin/debug-bar": "*",
-      "wpackagist-plugin/debug-bar-console": "*",
       "wpackagist-plugin/google-analytics-for-wordpress": "*",
       "wpackagist-plugin/wp-super-cache": "*"
   },

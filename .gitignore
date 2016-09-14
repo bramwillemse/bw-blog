@@ -9,6 +9,7 @@ web/app/uploads/*
 # WordPress
 web/wp
 web/.htaccess
+web/wp/wp-content/themes/*
 
 # WP-CLI
 db-sync

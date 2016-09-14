@@ -4,15 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "59c83ea890a6d89e157c8ad44b297124",
-    "content-hash": "3fb82631473983d8e8cd3e598b7ad151",
+    "hash": "1c2fb2bd56606363426f302307cdb07a",
+    "content-hash": "f22e4d4f324998452e8088a0ffa7f8c0",
     "packages": [
         {
             "name": "advanced-custom-fields/acf-pro",
-            "version": "5.1.5",
+            "version": "5.4.5",
             "dist": {
                 "type": "zip",
-                "url": "http://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9MzM5OTN8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE0LTA3LTA5IDEwOjAwOjEz",
+                "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9MzM5OTN8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE0LTA3LTA5IDEwOjAwOjEz",
                 "reference": null,
                 "shasum": null
             },
@@ -123,7 +123,7 @@
         },
         {
             "name": "deliciousbrains/wp-migrate-db-pro",
-            "version": "1.6",
+            "version": "1.6.1",
             "dist": {
                 "type": "zip",
                 "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-latest.zip?licence_key=f18a15ff-0c4d-400f-aea5-a9f4bd0d2fa4&site_url=bramwillemse.nl",
@@ -137,7 +137,7 @@
         },
         {
             "name": "deliciousbrains/wp-migrate-db-pro-media-files",
-            "version": "1.4.4",
+            "version": "1.4.5",
             "dist": {
                 "type": "zip",
                 "url": "https://deliciousbrains.com/?wc-api=delicious-brains&request=download&licence_key=f18a15ff-0c4d-400f-aea5-a9f4bd0d2fa4&slug=wp-migrate-db-pro-media-files&site_url=bramwillemse.nl",
@@ -151,16 +151,16 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.5.2",
+            "version": "4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "e992d00a34ea84d55c80023d27d5bcb839069add"
+                "reference": "1fb4b67e331d82f9061eaf3fcbc94163db85c135"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/e992d00a34ea84d55c80023d27d5bcb839069add",
-                "reference": "e992d00a34ea84d55c80023d27d5bcb839069add",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/1fb4b67e331d82f9061eaf3fcbc94163db85c135",
+                "reference": "1fb4b67e331d82f9061eaf3fcbc94163db85c135",
                 "shasum": ""
             },
             "require": {
@@ -184,7 +184,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2016-05-06 18:16:20"
+            "time": "2016-08-16 18:32:04"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -233,20 +233,6 @@
                 "wordpress"
             ],
             "time": "2015-06-11 15:15:30"
-        },
-        {
-            "name": "norcross/airplane-mode",
-            "version": "0.0.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/norcross/airplane-mode/archive/master.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "*"
-            },
-            "type": "wordpress-plugin"
         },
         {
             "name": "oscarotero/env",
@@ -348,50 +334,6 @@
             "time": "2016-03-01 16:27:06"
         },
         {
-            "name": "roots/wp-stage-switcher",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/roots/wp-stage-switcher.git",
-                "reference": "a22cc070927011058fecc07f2d82d79fe81a7f1a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/roots/wp-stage-switcher/zipball/a22cc070927011058fecc07f2d82d79fe81a7f1a",
-                "reference": "a22cc070927011058fecc07f2d82d79fe81a7f1a",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "~1.0",
-                "php": ">=5.3.0"
-            },
-            "type": "wordpress-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Scott Walkinshaw",
-                    "email": "scott.walkinshaw@gmail.com",
-                    "homepage": "https://github.com/swalkinshaw",
-                    "role": "Roots/Bedrock developer"
-                },
-                {
-                    "name": "Ben Word",
-                    "email": "ben@benword.com",
-                    "homepage": "https://github.com/retlehs",
-                    "role": "Roots/Bedrock developer"
-                }
-            ],
-            "description": "WordPress plugin that allows you to switch between different environments from the admin bar",
-            "homepage": "http://roots.io/plugin/stage-switcher/",
-            "keywords": [
-                "wordpress"
-            ],
-            "time": "2014-04-07 23:12:11"
-        },
-        {
             "name": "vlucas/phpdotenv",
             "version": "v2.4.0",
             "source": {
@@ -440,46 +382,6 @@
                 "environment"
             ],
             "time": "2016-09-01 10:05:43"
-        },
-        {
-            "name": "wpackagist-plugin/debug-bar",
-            "version": "0.8.4",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/debug-bar/",
-                "reference": "tags/0.8.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/debug-bar.0.8.4.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/debug-bar/"
-        },
-        {
-            "name": "wpackagist-plugin/debug-bar-console",
-            "version": "0.3",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/debug-bar-console/",
-                "reference": "tags/0.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/debug-bar-console.0.3.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/debug-bar-console/"
         },
         {
             "name": "wpackagist-plugin/disqus-comment-system",
@@ -562,86 +464,6 @@
             "homepage": "https://wordpress.org/plugins/iwp-client/"
         },
         {
-            "name": "wpackagist-plugin/post-thumbnail-editor",
-            "version": "2.4.8",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/post-thumbnail-editor/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/post-thumbnail-editor.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/post-thumbnail-editor/"
-        },
-        {
-            "name": "wpackagist-plugin/regenerate-thumbnails",
-            "version": "2.2.6",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/regenerate-thumbnails/",
-                "reference": "tags/2.2.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails.2.2.6.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/regenerate-thumbnails/"
-        },
-        {
-            "name": "wpackagist-plugin/search-and-replace",
-            "version": "3.1.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/search-and-replace/",
-                "reference": "tags/3.1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/search-and-replace.3.1.0.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/search-and-replace/"
-        },
-        {
-            "name": "wpackagist-plugin/simple-page-ordering",
-            "version": "2.2.4",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/simple-page-ordering/",
-                "reference": "tags/2.2.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/simple-page-ordering.2.2.4.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/simple-page-ordering/"
-        },
-        {
             "name": "wpackagist-plugin/wordpress-importer",
             "version": "0.6.3",
             "source": {
@@ -660,26 +482,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-importer/"
-        },
-        {
-            "name": "wpackagist-plugin/wordpress-seo",
-            "version": "3.5",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/3.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.5.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
         },
         {
             "name": "wpackagist-plugin/wp-super-cache",
