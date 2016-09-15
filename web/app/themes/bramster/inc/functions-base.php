@@ -69,7 +69,7 @@ class themeBase {
 
 		// Theme Stylesheets using Enqueue
 		public function load_stylesheet() {
-			wp_register_style( 'stylesheet', get_template_directory_uri() . '/assets/css/screen.css', array(), null, 'all');
+			wp_register_style( 'stylesheet', get_template_directory_uri() . '/dist/css/screen.css', array(), null, 'all');
 			wp_enqueue_style( 'stylesheet' ); // Enqueue it!
 		}
 
@@ -82,7 +82,7 @@ class themeBase {
 		public function header_scripts() {
 		    if (!is_admin()) {
 				// registers script, stylesheet local path, no dependency, no version, loads in header
-		        wp_register_script('headerscripts', get_stylesheet_directory_uri() . '/assets/js/scripts-header-ck.js', false, null, false ); // Header scripts
+		        wp_register_script('headerscripts', get_stylesheet_directory_uri() . '/dist/js/scripts-header.min.js', false, null, false ); // Header scripts
 		        wp_enqueue_script('headerscripts'); // Enqueue it!
 		    }
 		}
@@ -93,7 +93,7 @@ class themeBase {
 				
 				wp_enqueue_script('jquery',false, null, false); // Reregister WordPress jQuery in footer
 						        
-		        wp_register_script('footerscripts', get_template_directory_uri() . '/assets/js/scripts-ck.js', array(), null); // Main scripts
+		        wp_register_script('footerscripts', get_template_directory_uri() . '/dist/js/scripts.min.js', array(), null); // Main scripts
 		        wp_enqueue_script('footerscripts'); // Enqueue it!
 		    }
 		}
