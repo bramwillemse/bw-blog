@@ -6,4 +6,6 @@
 		$('#nav-main').toggleClass('is-visible');
 	});
 
+    alert('test');
+
 })(window.jQuery);
