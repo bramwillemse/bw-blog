@@ -18,16 +18,16 @@ gulp.task('watch', function() {
     gulp.watch('./**/*.php', reload);
 
 	// Watch Sass
-    gulp.watch('./src/scss/**/*.scss', ['style']);
+    gulp.watch('./src/sass/**/*.scss', ['style']);
 
     // Watch scripts
-    gulp.watch('./src/js/**/*', ['scripts', reload]);
+    gulp.watch('./src/js/**/*.js', ['scripts', reload]);
 
     // Watch image files
-    gulp.watch('./src/images/raster/*', ['images']);
+    // gulp.watch('./src/img/raster/*', ['images']);
 
     // Watch SVG files
-    gulp.watch('./src/images/vector/*', ['svgs']);
+    // gulp.watch('./src/images/vector/*', ['svgs']);
 
     // Watch Styleguide
     // gulp.watch('./dist/styleguide/*', [reload]);

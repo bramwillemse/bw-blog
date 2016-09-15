@@ -8,7 +8,7 @@
 	&:focus {
 		background-color: lighten($first,12.5%); 
 
-		color: $black;
+		color: $white;
 	}
 	&:active {
 		background-color: darken($first,5%);

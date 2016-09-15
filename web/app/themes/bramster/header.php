@@ -1,10 +1,6 @@
 <!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7" manifest="default.appcache?v=1"><![endif]--> 
-<!--[if lt IE 7 ]><html class="no-js ie6" lang="en"><![endif]--> 
-<!--[if IE 7 ]><html class="no-js ie7" lang="en"><![endif]--> 
-<!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]--> 
-<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<!-- the "no-js" class is for Modernizr. -->
+
+<html lang="nl">
 
 <head>
 
@@ -19,11 +15,7 @@
 	</script>
 
 	<meta charset="utf-8" >
-	
-	<!-- This prevents the conditional comments below from holding up the page load
-		 www.phpied.com/conditional-comments-block-downloads/ -->
-	<!--[if IE]><![endif]-->
-			
+				
 	<meta name="author" content="Bram Willemse">
 	<meta name="copyright" content="Creative Commons Bram Willemse 2013">
 
