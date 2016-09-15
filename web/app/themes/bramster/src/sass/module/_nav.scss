@@ -29,9 +29,9 @@
 	 	color: $white;
 	 	font-weight: 400;
 
-		// Transition
-		@include transition-property(background-color);
-		@include transition-duration(0.15s);
+		// Transition #FIXME replace Compass
+		// @include transition-property(background-color);
+		// @include transition-duration(0.15s);
 
 		&:hover,
 		&:focus {

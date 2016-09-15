@@ -16,9 +16,10 @@
 		
 		line-height: 1em;
 
-		@include transition-property(background-color);
-		@include transition-property(color);
-		@include transition-duration(0.3s);
+		// #FIXME replace compass
+		// @include transition-property(background-color);
+		// @include transition-property(color);
+		// @include transition-duration(0.3s);
 
 		&:hover {
 			background-color: $second;

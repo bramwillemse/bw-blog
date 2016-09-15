@@ -33,7 +33,7 @@
 		bottom: $vertical-margin * 0.5;
 		z-index: 99;
 	
-		@include text-shadow( rgba($black, 0.9) 1px 2px 5px ); 
+		// @include text-shadow( rgba($black, 0.9) 1px 2px 5px ); #FIXME replace Compass
 		
 		@include font-size($font-huge,1);
 		color: $white;

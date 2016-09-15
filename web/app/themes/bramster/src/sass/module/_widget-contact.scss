@@ -3,9 +3,9 @@
 		color: $grey;
 		text-decoration: none;
 
-		// Transition
-		@include transition-property(background-color);
-		@include transition-duration(0.3s);
+		// Transition #FIXME replace compass
+		// @include transition-property(background-color);
+		// @include transition-duration(0.3s);
 		
 		&:hover,
 		&:focus {

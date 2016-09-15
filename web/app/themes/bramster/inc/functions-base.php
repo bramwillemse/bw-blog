@@ -69,7 +69,7 @@ class themeBase {
 
 		// Theme Stylesheets using Enqueue
 		public function load_stylesheet() {
-			wp_register_style( 'stylesheet', get_template_directory_uri() . '/dist/css/screen.css', array(), null, 'all');
+			wp_register_style( 'stylesheet', get_template_directory_uri() . '/dist/css/main.min.css', array(), null, 'all');
 			wp_enqueue_style( 'stylesheet' ); // Enqueue it!
 		}
 
@@ -79,13 +79,13 @@ class themeBase {
 	   	========================================================================== */
 
 		// Load header scripts (in <head>)
-		public function header_scripts() {
-		    if (!is_admin()) {
-				// registers script, stylesheet local path, no dependency, no version, loads in header
-		        wp_register_script('headerscripts', get_stylesheet_directory_uri() . '/dist/js/scripts-header.min.js', false, null, false ); // Header scripts
-		        wp_enqueue_script('headerscripts'); // Enqueue it!
-		    }
-		}
+		// public function header_scripts() {
+		//     if (!is_admin()) {
+		// 		// registers script, stylesheet local path, no dependency, no version, loads in header
+		//         wp_register_script('headerscripts', get_stylesheet_directory_uri() . '/dist/js/scripts-header.min.js', false, null, false ); // Header scripts
+		//         wp_enqueue_script('headerscripts'); // Enqueue it!
+		//     }
+		// }
 
 		// Load footer scripts (before </body>)
 		public function footer_scripts() {

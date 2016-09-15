@@ -5,7 +5,7 @@
 			<a href="http://feeds.feedburner.com/bramwillemse" class="rss"><span class="ss-icon ss-social-regular">&#xE310;</span> RSS</a>
 		</p>
 		<p>
-			<strong>KvK</strong> 02100899 <strong>BTW</strong> NL194615819B01 <strong>Adres</strong> Amstelveenseweg 65/2, 1075VV, Amsterdam
+			<strong>KvK</strong> <a href="https://www.kvk.nl/orderstraat/product-kiezen/?kvknummer=021008990000&origq=bram+willemse">02100899</a> <strong>BTW</strong> NL194615819B01
 		</p>
 	</footer>
 
