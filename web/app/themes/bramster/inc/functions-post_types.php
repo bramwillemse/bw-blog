@@ -6,11 +6,8 @@ class PostTypes {
 	 */
 	public function __construct() {
 		add_action( 'init', array( &$this, 'websites_post_type' ), 0 );
-		// add_action( 'init', array( &$this, 'team_post_type' ), 0 );
-		// add_action( 'init', array( &$this, 'customers_post_type' ), 0 );
 		
 		add_filter( 'request', array( &$this, 'my_custom_archive_order'), 0 );
-		// add_action( 'nav_menu_css_class', array( &$this, 'add_current_nav_class'), 10, 2 );
 		add_filter('nav_menu_css_class', array( &$this, 'theme_current_type_nav_class'), 1, 2);
 		add_action( 'admin_head', array( &$this, 'post_type_icons') );
 
