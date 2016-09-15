@@ -1,0 +1,18 @@
+a.more-link {
+	background-color: $first;
+
+	font-weight: 600;
+	color: $white;
+
+	&:hover,
+	&:focus {
+		background-color: lighten($first,12.5%); 
+	}
+	&:active {
+		background-color: darken($first,5%);
+	}
+
+	// Transition #FIXME replace compass with Sass mixin
+	// @include transition-property(background-color);
+	// @include transition-duration(0.15s);
+}

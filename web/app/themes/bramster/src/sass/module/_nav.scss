@@ -1,0 +1,53 @@
+.nav {
+	text-align: center; 
+	line-height: 1em;
+
+	@include breakpoint(medium) {
+		text-align: left;
+	}
+
+	li { 
+		display: inline;
+		display: inline-block;
+		overflow: hidden;
+		list-style: none;
+
+		@include breakpoint(medium) {
+			float: left;
+		}
+	} 
+
+	a { 
+		display: inline;
+		display: inline-block; 
+	 	width: auto;
+
+	 	padding: 0.3em 0.6em;
+	 	background-color: $grey;
+
+		@include font-size($font-medium);
+	 	color: $white;
+	 	font-weight: 400;
+
+		// Transition #FIXME replace Compass
+		// @include transition-property(background-color);
+		// @include transition-duration(0.15s);
+
+		&:hover,
+		&:focus {
+			background-color: lighten($first,12.5%); 
+		}
+		&:active{
+			background-color: darken($first,5%);
+		}
+	}
+
+ 	.current-menu-item a,
+ 	.current_page_parent a,
+ 	.current-page-ancestor a { 
+	 	color: $black;
+	 	background-color: $second;
+ 	 	text-decoration: none; 
+ 	} 
+
+}
