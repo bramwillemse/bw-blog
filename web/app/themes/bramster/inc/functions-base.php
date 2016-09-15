@@ -22,7 +22,7 @@ class themeBase {
 	   	add_action('wp_enqueue_scripts', array( &$this, 'load_stylesheet' ) ); // Add Theme Stylesheet	
 		
 	   	// Scripts
-		add_action( 'init', array( &$this, 'header_scripts' ) ) ; // Add Custom Scripts to wp_head
+		// add_action( 'init', array( &$this, 'header_scripts' ) ) ; // Add Custom Scripts to wp_head
 		add_action( 'wp_footer', array( &$this, 'footer_scripts')); // Add Custom Scripts to wp_footer
 		add_filter( 'wp_default_scripts', array( &$this, 'dequeue_jquery_migrate' ) ); // Remove jQuery Migrate script
 		add_filter( 'style_loader_src',  array( &$this, 't5_remove_version' )); // Remove version numbers from stylesheets

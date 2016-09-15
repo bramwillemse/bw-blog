@@ -15,7 +15,7 @@ var gulp = require('gulp'),
 
 // Task: Compile sass into CSS, compress and auto-inject into browsers
 gulp.task('style', function() {
-	return gulp.src('./src/sass/main.scss')
+	return gulp.src('./src/sass/**/*.scss, !./src/sass/**/_*.scss')
 		.pipe(sourcemaps.init())
 		.pipe(
 		sass({
