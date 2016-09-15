@@ -1,6 +1,6 @@
 .footer {
 	padding: 3em 1em;
-	background-color: red;
+	background-color: $grey;
 
 	@include font-size($font-small, 1.5);
 	color: $white;

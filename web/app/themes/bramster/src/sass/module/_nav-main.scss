@@ -52,11 +52,11 @@
 		text-align: left;
 	}
 
-	// Transition for mobile
-	@include transition-property(max-height);
-	@include transition-duration(0.333s);
-	@include transition-timing-function(ease-in);
-	@include transition-delay(0s);	
+	// Transition for mobile #FIXME replace Compass
+	// @include transition-property(max-height);
+	// @include transition-duration(0.333s);
+	// @include transition-timing-function(ease-in);
+	// @include transition-delay(0s);	
 
 	&.is-visible {
 		max-height: 10em;

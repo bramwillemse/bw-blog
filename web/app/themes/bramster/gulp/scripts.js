@@ -24,10 +24,13 @@ var uglifyOptions = {
 
 // Main scripts task
 gulp.task('scripts', ['scripts:lint'], function() {
-    return gulp.src('./src/js/**/_*.js')
+    return gulp.src([
+        './src/js/**/*.js'
+        // '!./src/js/**/_*.js'
+    ])
     .pipe(debug({title: 'src:'}))
     .pipe(sourcemaps.init())
-    .pipe(concat('main.js'))
+    .pipe(concat('scripts.js'))
     .pipe(uglify(uglifyOptions))
     .pipe(debug({title: 'uglify:'}))
     .pipe(rename({

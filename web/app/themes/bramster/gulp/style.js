@@ -14,7 +14,6 @@ var debug = require('gulp-debug');
 
 
 
-
 // Task: Compile sass into CSS, compress and auto-inject into browsers
 gulp.task('style', function() {
 	return gulp.src([

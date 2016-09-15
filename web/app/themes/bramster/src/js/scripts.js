@@ -5,7 +5,5 @@
 	$('#button-toggle').click(function() {
 		$('#nav-main').toggleClass('is-visible');
 	});
-
-    alert('test');
-
+    
 })(window.jQuery);
