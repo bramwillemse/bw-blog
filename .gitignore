@@ -6,6 +6,7 @@ web/app/upgrade
 web/app/uploads/*
 web/app/ewww
 !web/app/uploads/.gitkeep
+web/app/ewww
 
 # WordPress
 web/wp
