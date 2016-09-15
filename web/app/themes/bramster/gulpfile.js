@@ -3,7 +3,7 @@
 // Default Gulp task
 
 // Include all gulp files
-require('require-dir')('./_gulp', {recurse: true});
+require('require-dir')('./gulp', {recurse: true});
 
 
 
@@ -15,10 +15,8 @@ var gulp = require('gulp');
 // DEFAULT TASKS
 // Run local development task
 gulp.task('default', [
-    'templates',
 	'style',
 	'scripts',
-    'styleguide',
 	'serve',
 	'watch'
 ]);

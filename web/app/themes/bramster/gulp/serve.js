@@ -11,8 +11,6 @@ var gulp = require('gulp'),
 // Task: Static Server
 gulp.task('serve', function() {
     browserSync.init({
-        server: './dist',
-		startPath: '/index.html'
+        proxy: "bramwillemse.dev"
     });
-
 });
