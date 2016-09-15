@@ -1,8 +1,12 @@
 # [Bram Willemse](https://bramwillemse.nl/)
 
-This is my personal WordPress website built with Bedrock.
+This is my personal WordPress website built with Bedrock. 
 
-
+## Todo
+- Create roadmap (including version numbers)
+- Implement gulp.js into theme
+- Split up current theme into theme and plugins 
+- Add favicon
 
 ## Bedrock
 I'm using Bedrock as a development framework for my WordPress themes. 
