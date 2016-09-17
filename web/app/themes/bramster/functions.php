@@ -1,16 +1,9 @@
 <?php
 /* 	============================================================================
-   	Load Base functions
+   	Load Theme Setup
 	==========================================================================*/
 
-	include_once('inc/functions-base.php');
-
-
-/* 	============================================================================
-   	Load Custom Post Types
-	==========================================================================*/
-
-	include_once('inc/functions-post_types.php');
+	include_once('inc/class-theme-setup.php');
 
 
 /* 	============================================================================
@@ -150,7 +143,4 @@
 	add_action( 'init', 'html5wp_pagination' ); // Add our HTML5 Pagination
 	add_action( 'widgets_init', function(){ register_widget( 'ContactWidget' ); });	
 	
-	// Add Filters
-	// add_filter('widget_text', 'shortcode_unautop'); // Remove <p> tags in Dynamic Sidebars (better!)
-	// add_filter('the_excerpt', 'shortcode_unautop'); // Remove auto <p> tags in Excerpt (Manual Excerpts only)
 ?>
