@@ -6,12 +6,15 @@ web/app/upgrade
 web/app/uploads/*
 web/app/ewww
 !web/app/uploads/.gitkeep
-web/app/ewww
 
 # WordPress
 web/wp
 web/.htaccess
 web/wp/wp-content/themes/*
+
+# Plugins
+web/app/ewww
+!web/app/plugins/brw-architecture
 
 # WP-CLI
 db-sync
