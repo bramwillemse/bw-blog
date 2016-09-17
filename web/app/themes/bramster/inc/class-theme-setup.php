@@ -1,5 +1,5 @@
 <?php 
-class themeBase {
+class themeSetup {
 
 	/**
 	 * Constructor
@@ -127,68 +127,12 @@ class themeBase {
 
 
 
-	/* 	=============================================================================
-	   	WordPress backend function tweaks
-	   	========================================================================== */
 
-
-		// Remove items from admin menu
-		public function remove_admin_bar_items() {
-		        global $wp_admin_bar;
-		       
-		        $wp_admin_bar->remove_menu('wp-logo'); /* Remove WordPress Logo */
-		        // $wp_admin_bar->remove_menu('comments'); /* Remove 'Add New > Posts' */
-		        // $wp_admin_bar->remove_menu('new-post'); /* Remove 'Add New > Posts' */
-		}
-
-		// Remove items in admin menu
-		public function remove_admin_menu_items() {
-			// Remove 'Comments'
-			// remove_menu_page('edit-comments.php');
-
-			// Remove submenu item: 'Appearance > Customize'
-			remove_submenu_page('themes.php', 'customize.php');
-
-			// Conditional removals 
-			if(!current_user_can('edit_themes')) { // Remove items for editors and below
-				remove_menu_page('tools.php'); 
-			}
-			
-		}
-
-	   	// Deactivate dashboard widgets
-		public function my_custom_dashboard_widgets() {
-			global $wp_meta_boxes;
-			 //Right Now - Comments, Posts, Pages at a glance
-			// unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_right_now']);
-			//Recent Comments
-			unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_recent_comments']);
-			//Incoming Links
-			// unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_incoming_links']);
-			//Plugins - Popular, New and Recently updated Wordpress Plugins
-			unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_plugins']);
-
-			//Wordpress Development Blog Feed
-			unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_primary']);
-			//Other Wordpress News Feed
-			unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary']);
-			//Quick Press Form
-			unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_quick_press']);
-			//Recent Drafts List
-			unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_recent_drafts']);
-		}
-
-		// remove extra CSS that 'Recent Comments' widget injects
-		public function remove_recent_comments_style() {
-		    global $wp_widget_factory;
-		    remove_action('wp_head', array(
-		        $wp_widget_factory->widgets['WP_Widget_Recent_Comments'],
-		        'recent_comments_style'
-		    ));
-		}
 	
 }
-new themeBase();
+new themeSetup();
+
+
 
 /* 	=============================================================================
    	Usable Functions
