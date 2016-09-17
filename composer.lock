@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "57b1b459e6557d98e48ac0fe6923d63d",
-    "content-hash": "a1bf5b10ad7efbed802ded4b25871ede",
+    "hash": "b68168cbe595ef0e79e80856af364ce2",
+    "content-hash": "9d89e4e41fafe31db9795f4e90a951db",
     "packages": [
         {
             "name": "advanced-custom-fields/acf-pro",
@@ -13,6 +13,34 @@
             "dist": {
                 "type": "zip",
                 "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9MzM5OTN8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE0LTA3LTA5IDEwOjAwOjEz",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "*"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "bramwillemse/bramwillemsenl-setup",
+            "version": "0.4.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/bramwillemse/bramwillemsenl-setup/archive/master.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "*"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "bramwillemse/wp-normalize",
+            "version": "1.0.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/bramwillemse/wp-normalize/archive/master.zip",
                 "reference": null,
                 "shasum": null
             },
