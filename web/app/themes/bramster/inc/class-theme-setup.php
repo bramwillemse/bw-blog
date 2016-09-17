@@ -23,7 +23,7 @@ class themeSetup {
 
 		// WP backend
 		// add_action( 'admin_menu', array( &$this, 'adjust_the_wp_menu'), 999 ); // Remove items admin submenu
-		add_filter( 'admin_footer_text', array( &$this, 'custom_admin_footer')); // Customize admin footer text
+		// add_filter( 'admin_footer_text', array( &$this, 'custom_admin_footer')); // Customize admin footer text
 
     }
 
