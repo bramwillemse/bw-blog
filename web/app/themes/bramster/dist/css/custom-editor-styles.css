@@ -1335,11 +1335,12 @@ a.highlight {
 a.more-link {
   background-color: #006c90;
   font-weight: 600;
-  color: #F9F9F9; }
-  /* line 7, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_more-link.scss */
+  color: #F9F9F9;
+  transition: background-color 0.15s; }
+  /* line 9, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_more-link.scss */
   a.more-link:hover, a.more-link:focus {
     background-color: #009cd0; }
-  /* line 11, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_more-link.scss */
+  /* line 13, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_more-link.scss */
   a.more-link:active {
     background-color: #005977; }
 

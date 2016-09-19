@@ -29,10 +29,8 @@
 	 	color: $white;
 	 	font-weight: 400;
 
-		// Transition #FIXME replace Compass
-		// @include transition-property(background-color);
-		// @include transition-duration(0.15s);
-
+		transition: background-color 0.15s;
+		
 		&:hover,
 		&:focus {
 			background-color: lighten($first,12.5%); 
