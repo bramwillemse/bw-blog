@@ -33,7 +33,7 @@
 		<link rel="image_src" href="<?php echo $image_url; ?>" >
 	<?php endif; ?>
     
-	<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/_/img/favicon.png">
+	<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/dist/img/favicon.png">
 	
 	<link rel="apple-touch-icon" href="">
 
