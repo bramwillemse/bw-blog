@@ -1195,7 +1195,7 @@ a {
   a:active {
     color: #003c50; }
 
-/* line 116, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
+/* line 204, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
 ul,
 ul li,
 li {
@@ -1203,33 +1203,33 @@ li {
   padding: 0;
   list-style: none; }
 
-/* line 124, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
+/* line 212, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
 blockquote {
   margin: 1em 0 1em 1em;
   padding-left: 1em;
   border-left: 3px solid #333; }
-  /* line 128, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
+  /* line 216, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
   blockquote p {
     font-family: Georgia, serif;
     font-size: 1em;
     line-height: 1.5em;
     font-style: italic; }
 
-/* line 135, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
+/* line 223, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
 *:focus {
   outline: none; }
 
-/* line 136, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
+/* line 224, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
 *::-moz-focus-inner {
   border: none; }
 
-/* line 137, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
+/* line 225, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
 ::-moz-selection {
   background: #ffff55;
   color: #000;
   text-shadow: none; }
 
-/* line 138, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
+/* line 226, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
 ::-moz-selection {
   background: #ffff55;
   color: #000;
@@ -1239,40 +1239,40 @@ blockquote {
   color: #000;
   text-shadow: none; }
 
-/* line 139, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
+/* line 227, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
 iframe {
   max-width: 100%; }
 
 /* WordPress classes */
-/* line 142, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
+/* line 230, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
 .alignleft {
   float: left; }
 
-/* line 143, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
+/* line 231, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
 .alignright {
   float: right; }
 
-/* line 144, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
+/* line 232, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
 img.alignleft {
   float: left;
   margin: 0; }
 
-/* line 145, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
+/* line 233, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
 img.alignright {
   float: right;
   margin: 0; }
 
-/* line 146, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
+/* line 234, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
 img.aligncenter {
   display: block;
   margin: 0 auto; }
 
-/* line 150, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
+/* line 238, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
 .home .vvqbox {
   max-width: 450px !important; }
 
 /* HACKS */
-/* line 153, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
+/* line 241, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
 .tzfix {
   transform: translatez(0); }
 

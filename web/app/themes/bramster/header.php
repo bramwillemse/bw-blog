@@ -59,8 +59,5 @@
         	<span class="logo-description"><?php bloginfo('description'); ?></span>
         </a>
 		<?php get_template_part('inc/nav-mobile'); ?>
-
-		<?php //get_template_part('inc/nav-social'); ?>
-
     	<?php get_template_part('inc/nav-main') ?>
 	</header>

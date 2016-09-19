@@ -29,7 +29,6 @@
 		add_theme_support('menus');
 		register_nav_menus( array(
 			'nav-main' => 'Hoofdmenu',
-			'nav-social' => 'Menu social media',
 			'nav-mobile' => 'Menu voor mobile'
 		) );	
 	}
