@@ -24,16 +24,12 @@
 
 
 		// #FIXME replace compass
-		// @include transition-property(background-color);
-		// @include transition-duration(0.15s);
+		transition: background-color 0.15s;
 	}
 
 	.child-image {
-		
-		// #FIXME replace compass
-		// @include opacity(0.75);
-		// @include transition-property(opacity);
-		// @include transition-duration(0.15s);
+		opacity: 0.85;
+		transition: opacity 0.15s;
 	}
 
 	&:hover,
@@ -43,20 +39,16 @@
 		}
 
 		.child-image {
-			// #FIXME replace Compass
-			// @include opacity(0.9);
+			opacity: 0.9;
 		}
 	}
 	&:active {
-		// background-color: darken($first,5%);
-
 		h2 {
 			color: darken($first,5%);
 		}
 
 		.child-image {
-			// #FIXME replace Compass
-			// @include opacity(1);
+			opacity: 1;
 		}
 	}
 
