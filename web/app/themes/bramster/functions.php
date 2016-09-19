@@ -131,6 +131,7 @@
 			'after_title' => '</h2>',
 		));		
 	}
+	
 	// Include widget "Contact"
 	include_once( rtrim( dirname( __FILE__ ), '/' ) . '/inc/widget-contact.php' );
 
@@ -140,7 +141,17 @@
    ========================================================================== */
 
 	// Add Actions
-	add_action( 'init', 'html5wp_pagination' ); // Add our HTML5 Pagination
 	add_action( 'widgets_init', function(){ register_widget( 'ContactWidget' ); });	
-	
-?>
+
+	// Remove Actions
+	remove_action( 'wp_head', 'feed_links_extra', 3 ); // Display the links to the extra feeds such as category feeds
+	remove_action( 'wp_head', 'feed_links', 2 ); // Display the links to the general feeds: Post and Comment Feed
+	remove_action( 'wp_head', 'rsd_link' ); // Display the link to the Really Simple Discovery service endpoint, EditURI link
+	remove_action( 'wp_head', 'index_rel_link' ); // index link
+	remove_action( 'wp_head', 'parent_post_rel_link', 10, 0 ); // prev link
+	remove_action( 'wp_head', 'start_post_rel_link', 10, 0 ); // start link
+	remove_action( 'wp_head', 'adjacent_posts_rel_link', 10, 0 ); // Display relational links for the posts adjacent to the current post.
+	remove_action( 'wp_head', 'start_post_rel_link', 10, 0 );
+	remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head',10, 0 );
+	remove_action( 'wp_head', 'rel_canonical');
+	remove_action( 'wp_head', 'wp_shortlink_wp_head', 10, 0 );
