@@ -5,7 +5,6 @@
 	overflow: hidden;
 
 	background: $grey;
-	// border-top: $black 1px solid;
 
 	line-height: 2px;
 	text-align: center;
@@ -52,12 +51,8 @@
 		text-align: left;
 	}
 
-	// Transition for mobile #FIXME replace Compass
-	// @include transition-property(max-height);
-	// @include transition-duration(0.333s);
-	// @include transition-timing-function(ease-in);
-	// @include transition-delay(0s);	
-
+	transition: max-height 0.333s ease-in; // animate expand/collapse on small screens
+	
 	&.is-visible {
 		max-height: 10em;
 	}
