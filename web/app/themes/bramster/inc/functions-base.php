@@ -24,7 +24,6 @@ class themeBase {
 	   	// Scripts
 		// add_action( 'init', array( &$this, 'header_scripts' ) ) ; // Add Custom Scripts to wp_head
 		add_action( 'wp_footer', array( &$this, 'footer_scripts')); // Add Custom Scripts to wp_footer
-		add_filter( 'wp_default_scripts', array( &$this, 'dequeue_jquery_migrate' ) ); // Remove jQuery Migrate script
 		add_filter( 'style_loader_src',  array( &$this, 't5_remove_version' )); // Remove version numbers from stylesheets
 		add_filter( 'script_loader_src', array( &$this, 't5_remove_version' )); // Remove version numbers from scripts
 
@@ -32,36 +31,21 @@ class themeBase {
 		add_filter( 'upload_mimes', array( &$this, 'cc_mime_types' ) ); // Allow SVG upload
 
 		// Oembed
-		add_filter('oembed_providers', array( &$this, 'twitter_oembed' ) ); // Add support for Twitter embed
 		add_filter('oembed_dataparse', array( &$this, 'your_theme_embed_filter'), 90, 3 ); // Add box to Oembed video's and tweets for responsive support
-		add_filter('oembed_result', array( &$this, 'modify_youtube_embed_url')); // Modify  YouTube URL
-
-		// Users
-		add_filter( 'user_contactmethods', array( &$this, 'user_contactmethods'), 10, 1); // Add & remove certain contact information fields from user profile
-
-		// Plugins
-		add_filter("gform_init_scripts_footer", array( &$this, "init_scripts")); // Load Gravity Forms scripts in footer
 
 		// WordPress UI
 		// add_action('admin_menu', array( $this, 'remove_menus' )); // remove items from dashboard menu
 
 		// WP frontend
-		add_action('init', array( &$this, 'remove_header_info')); // remove unnecessary header info
-		add_filter('the_category', array( &$this, 'remove_category_rel_from_category_list')); // Remove invalid rel attribute
-		add_filter('body_class', array( &$this, 'add_slug_to_body_class')); // Add page slug to body class
-		add_filter('the_content_more_link', array( &$this, 'remove_more_jump_link')); // remove jump to content in more-link
 		add_filter('excerpt_more', array( &$this, 'disable_more_link')); // Add 'View Article' button instead of [...] for Excerpts
-
 
 		// WP backend
 		// add_action( 'admin_menu', array( &$this, 'adjust_the_wp_menu'), 999 ); // Remove items admin submenu
 		add_filter( 'admin_footer_text', array( &$this, 'custom_admin_footer')); // Customize admin footer text
-		add_filter( 'tiny_mce_before_init', array( &$this, 'fb_change_mce_options')); // Allow more HTML tags in the editor	
 		add_action( 'wp_before_admin_bar_render', array( &$this, 'remove_admin_bar_items'), 0 ); // Remove items from admin menu
 		// add_action( 'admin_menu', array( &$this, 'remove_admin_menu_items')); // Remove items in admin menu
-		add_action( 'wp_dashboard_setup', array( &$this, 'my_custom_dashboard_widgets')); // Deactivate dashboard widgets
-
     }
+
 
 	/* 	=============================================================================
 	   	Stylesheets
@@ -132,12 +116,6 @@ class themeBase {
 	/* 	=============================================================================
 	   	Oembed settings / add-ons
 	   	========================================================================== */  
-
-		// Add Twitter support
-		public function twitter_oembed($a) {
-		    $a['#http(s)?://(www\.)?twitter.com/.+?/status(es)?/.*#i'] = array( 'http://api.twitter.com/1/statuses/oembed.{format}', true);
-		    return $a;
-		}
 				
 		// Add container to video's
 		public function your_theme_embed_filter( $output, $data, $url ) {
@@ -152,129 +130,6 @@ class themeBase {
 			}
 		}
 
-		// Modify YouTube Embed URL	
-		public function modify_youtube_embed_url($html) {
-			if( get_field('video-popup') ) {
-				$autoplay = '&autoplay=1';
-			    return str_replace("?feature=oembed", "?feature=oembed&". $autoplay ."vq=hd720&showinfo=0&autohide=1", $html);
-			} else {
-			    return str_replace("?feature=oembed", "?feature=oembed&vq=hd720&showinfo=0&autohide=1", $html);
-
-			}
-		}
-
-
-	/* 	=============================================================================
-	   	Users, roles & capabilities
-	   	========================================================================== */  
-
-		public function edit_user_roles() {
-			// Add certain admin roles to editor
-			$_the_roles = new WP_Roles();
-			$_the_roles->add_cap('editor','list_users');
-			$_the_roles->add_cap('editor','edit_users');
-			$_the_roles->add_cap('editor','create_users');
-			$_the_roles->add_cap('editor','delete_users');
-			$_the_roles->add_cap('editor','edit_theme_options');
-		}
-
-		// Add & remove certain contact information fields from user profile
-		public function user_contactmethods($user_contactmethods){
-			$user_contactmethods['phone'] = 'Telefoon';
-			unset($user_contactmethods['yim']);
-			unset($user_contactmethods['aim']);
-			unset($user_contactmethods['jabber']);
-			$user_contactmethods['twitter'] = 'Twitter';
-			$user_contactmethods['facebook'] = 'Facebook';
-			$user_contactmethods['linkedin'] = 'Linkedin';
-			$user_contactmethods['user_title'] = 'Website Name';
-			// $user_contactmethods['functie'] = 'Functie';
-
-			//$user_contactmethods['gplus'] = 'Google Plus';
-			return $user_contactmethods;
-		}
-		// Use this code to embed in template:
-		// echo get_user_meta(1, 'twitter', true);
-
-
-
-	/* 	=============================================================================
-		Plugins
-		===========================================================================*/
-
-		// Gforms?
-		public function init_scripts(){
-			    return true;
-		}
-
-
-	/* 	=============================================================================
-	   	WordPress Frontend
-	   	========================================================================== */
-
-		// remove unnecessary header info
-		public function remove_header_info() {
-		    remove_action('wp_head', 'rsd_link');
-		    remove_action('wp_head', 'wlwmanifest_link');
-		    remove_action('wp_head', 'wp_generator');
-		    remove_action('wp_head', 'start_post_rel_link');
-		    remove_action('wp_head', 'index_rel_link');
-		    remove_action('wp_head', 'adjacent_posts_rel_link');         // for WordPress <  3.0
-		    remove_action('wp_head', 'adjacent_posts_rel_link_wp_head'); // for WordPress >= 3.0
-		}
-
-		// Remove the <div> surrounding the dynamic navigation to cleanup markup
-		public function my_wp_nav_menu_args( $args = '' ) {
-			$args['container'] = false;
-			return $args;
-		}
-
-		// Remove Injected classes, ID's and Page ID's from Navigation <li> items
-		public function my_css_attributes_filter($var) {
-			return is_array($var) ? array() : '';
-		}
-
-		// Remove invalid rel attribute
-		public function remove_category_rel_from_category_list($thelist){
-		     return str_replace('rel="category tag"', 'rel="tag"', $thelist);
-		}
-		
-		// Add page slug to body class, love this - Credit: Starkers Wordpress Theme
-		public function add_slug_to_body_class( $classes ) {
-			global $post;
-			if( is_home() ) {			
-				$key = array_search( 'blog', $classes );
-				if($key > -1) {
-					unset( $classes[$key] );
-				};
-			} elseif( is_page() ) {
-				$classes[] = sanitize_html_class( $post->post_name );
-			} elseif(is_singular()) {
-				$classes[] = sanitize_html_class( $post->post_name );
-			};
-
-			return $classes;
-		}
-
-		// remove jump to content in more-link
-		public function remove_more_jump_link($link) { 
-			$offset = strpos($link, '#more-');
-			if ($offset) {
-				$end = strpos($link, '"',$offset);
-			}
-			if ($end) {
-				$link = substr_replace($link, '', $offset, $end-$offset);
-			}
-			return $link;
-		}
-
-		// Custom View Article link to Post
-		public function disable_more_link($more)
-		{
-		    global $post;
-		    return '';
-		}
-		
 
 	/* 	=============================================================================
 	   	WordPress UI
@@ -423,73 +278,5 @@ new themeBase();
 	        'total' => $wp_query->max_num_pages
 	    ));
 	}
-
-	// Custom Excerpts
-	function html5wp_index($length) { // Create 20 Word Callback for Index page Excerpts, call using html5wp_excerpt('html5wp_index');
-	    return 33;
-	}
-	function html5wp_custom_post($length) { // Create 40 Word Callback for Custom Post Excerpts, call using html5wp_excerpt('html5wp_custom_post');
-	    return 40;
-	}
-
-	// Create the Custom Excerpts callback
-	function html5wp_excerpt($length_callback='', $more_callback='') {
-	    global $post;
-	    if(function_exists($length_callback)){
-	        add_filter('excerpt_length', $length_callback);
-	    }
-	    if(function_exists($more_callback)){
-	        add_filter('excerpt_more', $more_callback);
-	    }
-	    $output = get_the_excerpt();
-	    $output = apply_filters('wptexturize', $output);
-	    $output = apply_filters('convert_chars', $output);
-	    $output = '<p>'.$output.'</p>';
-	    echo $output;
-	}
-
-	// Custom Comments Callback
-	function html5blankcomments($comment, $args, $depth) {
-		$GLOBALS['comment'] = $comment;
-		extract($args, EXTR_SKIP);
-
-		if ( 'div' == $args['style'] ) {
-			$tag = 'div';
-			$add_below = 'comment';
-		} else {
-			$tag = 'li';
-			$add_below = 'div-comment';
-		}
-	?>
-	    <!-- heads up: starting < for the html tag (li or div) in the next line: -->
-	    <<?php echo $tag ?> <?php comment_class(empty( $args['has_children'] ) ? '' : 'parent') ?> id="comment-<?php comment_ID() ?>">
-		<?php if ( 'div' != $args['style'] ) : ?>
-		<div id="div-comment-<?php comment_ID() ?>" class="comment-body">
-		<?php endif; ?>
-		<div class="comment-author vcard">
-		<?php if ($args['avatar_size'] != 0) echo get_avatar( $comment, $args['180'] ); ?>
-		<?php printf(__('<cite class="fn">%s</cite> <span class="says">says:</span>'), get_comment_author_link()) ?>
-		</div>
-	<?php if ($comment->comment_approved == '0') : ?>
-		<em class="comment-awaiting-moderation"><?php _e('Your comment is awaiting moderation.') ?></em>
-		<br />
-	<?php endif; ?>
-
-		<div class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>">
-			<?php
-				printf( __('%1$s at %2$s'), get_comment_date(),  get_comment_time()) ?></a><?php edit_comment_link(__('(Edit)'),'  ','' );
-			?>
-		</div>
-
-		<?php comment_text() ?>
-
-		<div class="reply">
-		<?php comment_reply_link(array_merge( $args, array('add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
-		</div>
-		<?php if ( 'div' != $args['style'] ) : ?>
-		</div>
-		<?php endif; ?>
-	<?php }
-
 
 ?>
