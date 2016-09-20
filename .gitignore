@@ -25,6 +25,10 @@ sql-dump-*.sql
 .env.*
 !.env.example
 
+# Capistrano
+log
+log/*
+
 # Vendor (e.g. Composer)
 vendor/*
 !vendor/.gitkeep
