@@ -35,7 +35,7 @@
 		<link rel="image_src" href="<?php echo $image_url; ?>" >
 	<?php endif; ?>
     
-	<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/dist/img/favicon.png">
+	<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/dist/img/favicon/favicon-96x96.png">
 	
 	<link rel="apple-touch-icon" href="">
 
@@ -45,7 +45,7 @@
     <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <title><?php wp_title(''); ?></title>
+    <title><?php wp_title('|', true, 'right') . bloginfo('name'); ?></title>
             
     <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
