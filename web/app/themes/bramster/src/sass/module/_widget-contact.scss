@@ -1,0 +1,25 @@
+.widget-contact {
+	a {
+		color: $grey;
+		text-decoration: none;
+
+		transition: color 0.3s;
+		
+		&:hover,
+		&:focus {
+			color: $first;
+		}
+		&:active {
+			color: darken($first,5%);
+		}
+	}
+
+	@include breakpoint(medium) {
+		margin-top: 0.5em;
+		@include font-size($font-small);
+	}
+	@include breakpoint(large) {
+		margin-top: 0.25em;
+		@include font-size($font-normal);	
+	}
+}

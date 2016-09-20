@@ -1,29 +1,23 @@
 <!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7" manifest="default.appcache?v=1"><![endif]--> 
-<!--[if lt IE 7 ]><html class="no-js ie6" lang="en"><![endif]--> 
-<!--[if IE 7 ]><html class="no-js ie7" lang="en"><![endif]--> 
-<!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]--> 
-<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<!-- the "no-js" class is for Modernizr. -->
+
+<html lang="nl">
 
 <head>
 
-	<script type="text/javascript">
-	  (function() {
-	    var config = {
-	      kitId: 'dke5hva',
-	      scriptTimeout: 0
-	    };
-	    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
-	  })();
-	</script>
+    <!-- Typekit -->
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'dke5hva',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
 
 	<meta charset="utf-8" >
-	
-	<!-- This prevents the conditional comments below from holding up the page load
-		 www.phpied.com/conditional-comments-block-downloads/ -->
-	<!--[if IE]><![endif]-->
-			
+				
 	<meta name="author" content="Bram Willemse">
 	<meta name="copyright" content="Creative Commons Bram Willemse 2013">
 
@@ -41,7 +35,13 @@
 		<link rel="image_src" href="<?php echo $image_url; ?>" >
 	<?php endif; ?>
     
-	<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/_/img/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('stylesheet_directory'); ?>/dist/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/dist/img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/dist/img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="<?php bloginfo('stylesheet_directory'); ?>/dist/img/favicon/manifest.json">
+    <link rel="mask-icon" href="<?php bloginfo('stylesheet_directory'); ?>/dist/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
 	
 	<link rel="apple-touch-icon" href="">
 
@@ -51,7 +51,7 @@
     <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <title><?php wp_title(''); ?></title>
+    <title><?php wp_title('|', true, 'right') . bloginfo('name'); ?></title>
             
     <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
@@ -67,8 +67,5 @@
         	<span class="logo-description"><?php bloginfo('description'); ?></span>
         </a>
 		<?php get_template_part('inc/nav-mobile'); ?>
-
-		<?php //get_template_part('inc/nav-social'); ?>
-
     	<?php get_template_part('inc/nav-main') ?>
 	</header>

@@ -1,0 +1,20 @@
+/*
+	Pitch
+
+	A three column list item 
+*/
+.pitch {
+	margin: 0;
+
+	li {
+		margin-bottom: $vertical-margin;
+
+		h2 {
+			margin-top: 0;
+		}
+
+		@include breakpoint(normal) {
+			@include grid(16,0,1.33333334);
+		}
+	}
+}

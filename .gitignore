@@ -4,12 +4,17 @@ web/app/plugins/*
 web/app/mu-plugins/*/
 web/app/upgrade
 web/app/uploads/*
+web/app/ewww
 !web/app/uploads/.gitkeep
 
 # WordPress
 web/wp
 web/.htaccess
 web/wp/wp-content/themes/*
+
+# Plugins
+web/app/ewww
+!web/app/plugins/brw-architecture
 
 # WP-CLI
 db-sync
@@ -19,6 +24,10 @@ sql-dump-*.sql
 .env
 .env.*
 !.env.example
+
+# Capistrano
+log
+log/*
 
 # Vendor (e.g. Composer)
 vendor/*
@@ -36,3 +45,5 @@ bin
 
 # Misc
 _assets/*
+brw.sublime-workspace
+brw-theme.sublime-workspace

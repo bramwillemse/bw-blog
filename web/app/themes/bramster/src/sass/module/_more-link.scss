@@ -1,0 +1,16 @@
+a.more-link {
+	background-color: $first;
+
+	font-weight: 600;
+	color: $white;
+
+	transition: background-color 0.15s;
+
+	&:hover,
+	&:focus {
+		background-color: lighten($first,12.5%); 
+	}
+	&:active {
+		background-color: darken($first,5%);
+	}
+}

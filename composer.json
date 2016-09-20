@@ -79,12 +79,27 @@
     {
       "type": "package",
       "package": {
-        "name": "bramwillemse/chram-base",
+        "name": "bramwillemse/wp-normalize",
         "type": "wordpress-plugin",
-        "version": "0.3",
+        "version": "1.0.4",
         "dist": {
           "type": "zip",
-          "url":  "https://bitbucket.org/bramwillemse/chram-base/get/15d69233c385.zip"
+          "url":  "https://github.com/bramwillemse/wp-normalize/archive/master.zip"
+        },
+        "require" : {
+          "composer/installers": "*"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "bramwillemse/bramwillemsenl-setup",
+        "type": "wordpress-plugin",
+        "version": "0.4.1",
+        "dist": {
+          "type": "zip",
+          "url":  "https://github.com/bramwillemse/bramwillemsenl-setup/archive/master.zip"
         },
         "require" : {
           "composer/installers": "*"
@@ -96,7 +111,7 @@
     "php": ">=5.5",
     "composer/installers": "~1.0.12",
     "vlucas/phpdotenv": "^2.0.1",
-    "johnpbloch/wordpress": "4.6",
+    "johnpbloch/wordpress": "4.6.1",
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
       "advanced-custom-fields/acf-pro": "*",
@@ -107,7 +122,9 @@
       "wpackagist-plugin/wordpress-importer": "*",
       "wpackagist-plugin/disqus-comment-system": "*",
       "wpackagist-plugin/google-analytics-for-wordpress": "*",
-      "wpackagist-plugin/wp-super-cache": "*"
+      "wpackagist-plugin/wp-super-cache": "*",
+    "bramwillemse/wp-normalize": "*",
+    "bramwillemse/bramwillemsenl-setup": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"

@@ -1,0 +1,48 @@
+.header-video { 
+	height: 225px;  /* start height */
+	margin-bottom: $vertical-margin * 2 !important;
+	
+	padding-top: 56.25%;  /* slope */
+	background: darken($grey,25%);
+	background-size: cover;
+	-moz-background-size: cover;  /* Firefox 3.6 */
+	background-position: center;  /* Internet Explorer 7/8 */
+	border-bottom: darken($grey,25%) 1px solid;
+
+	line-height: 0;
+
+	@include breakpoint(large) {
+		padding-top: 40%;
+	}
+	
+	.box-video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		padding: 0;
+		height: auto;
+		margin: 0;
+	}
+}
+
+h1.title-video {
+	@include grid(48,2);
+	margin-bottom: ($vertical-margin/$font-huge) * 2;
+	
+	@include font-size($font-huge,1);
+
+	@include breakpoint(medium) {
+		@include grid(48,12,0);
+		margin-bottom: ($vertical-margin/$font-monster) * 2;
+
+		@include font-size($font-monster,1);
+	}
+	@include breakpoint(normal) {
+		margin-bottom: ($vertical-margin/$font-god) * 2;
+
+		@include font-size($font-god,1);
+	}	
+}

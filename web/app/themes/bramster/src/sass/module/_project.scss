@@ -1,0 +1,90 @@
+.project {
+	@include grid(48);
+	position: relative;	
+	overflow: hidden;
+
+	background-color: $white;
+
+	a {
+		color: $grey;
+		text-decoration: none;
+	}
+
+	h2 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 0.6em 1em;
+		background-color: $white;
+
+		font-weight: 400;
+		color: $black;
+		text-align: center;
+		line-height: 1em;
+
+
+		// #FIXME replace compass
+		transition: background-color 0.15s;
+	}
+
+	.child-image {
+		opacity: 0.85;
+		transition: opacity 0.15s;
+	}
+
+	&:hover,
+	&:focus {
+		h2 {
+			color: lighten($first,12.5%);
+		}
+
+		.child-image {
+			opacity: 0.9;
+		}
+	}
+	&:active {
+		h2 {
+			color: darken($first,5%);
+		}
+
+		.child-image {
+			opacity: 1;
+		}
+	}
+
+	// MEDIA QUERIES
+	@include breakpoint(small) {
+		@include grid(24);
+	}
+
+	@include breakpoint(medium) {
+		h2 {
+			@include font-size($font-medium);
+			left: 0;
+
+			-webkit-transform: translate(0,-50%);
+			-ms-transform: translate(0,-50%);
+			transform: translate(0,-50%);			
+		}
+	}
+
+	@include breakpoint(normal) {
+		@include grid(16);
+	}
+
+	@include breakpoint(extralarge) {
+		@include grid(12);
+	}
+
+}
+
+.child-image {
+	display: block;	
+	padding-top: 56.25%;  /* slope */
+	height: 10em;  /* start height */
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	-moz-background-size: cover;  /* Firefox 3.6 */
+	background-position: center;  /* Internet Explorer 7/8 */
+}
