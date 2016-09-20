@@ -35,7 +35,13 @@
 		<link rel="image_src" href="<?php echo $image_url; ?>" >
 	<?php endif; ?>
     
-	<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/dist/img/favicon/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('stylesheet_directory'); ?>/dist/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/dist/img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/dist/img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="<?php bloginfo('stylesheet_directory'); ?>/dist/img/favicon/manifest.json">
+    <link rel="mask-icon" href="<?php bloginfo('stylesheet_directory'); ?>/dist/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
 	
 	<link rel="apple-touch-icon" href="">
 
