@@ -15,6 +15,7 @@ web/wp/wp-content/themes/*
 
 # Plugins
 web/app/ewww
+web/app/*.php
 !web/app/plugins/brw-architecture
 
 # WP-CLI
