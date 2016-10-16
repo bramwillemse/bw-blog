@@ -23,12 +23,13 @@
 @import "layout/l-column-big";
 @import "layout/l-column-small";
 
-/* MODULE */  
+/* MODULE */
 @import "module/blog";
 
 @import "module/header";
-@import "module/header-toolbar";
 @import "module/header-article";
+@import "module/header-title";
+@import "module/header-toolbar";
 @import "module/header-video";
 
 @import "module/contact";

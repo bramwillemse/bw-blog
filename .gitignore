@@ -5,6 +5,7 @@ web/app/mu-plugins/*/
 web/app/upgrade
 web/app/uploads/*
 web/app/ewww
+web/app/languages/*
 !web/app/uploads/.gitkeep
 
 # WordPress
@@ -14,6 +15,7 @@ web/wp/wp-content/themes/*
 
 # Plugins
 web/app/ewww
+web/app/*.php
 !web/app/plugins/brw-architecture
 
 # WP-CLI

@@ -10,13 +10,13 @@
 	Advanced Custom Fields
 	==========================================================================*/
 
-	if( function_exists('acf_add_options_page') ) {	
+	if( function_exists('acf_add_options_page') ) {
 		acf_add_options_sub_page(array(
 			'page_title' 	=> 'Contactgegevens',
 			'menu_title'	=> 'Contactgegevens',
 			'parent_slug'	=> 'options-general.php',
 			'capability'	=> 'edit_posts'
-		));		
+		));
 	}
 
 
@@ -24,13 +24,13 @@
 	Navigation
 	==========================================================================*/
 
-	if ( function_exists( 'add_theme_support' ) ) { 
+	if ( function_exists( 'add_theme_support' ) ) {
 		// Add support for custom menu's
 		add_theme_support('menus');
 		register_nav_menus( array(
 			'nav-main' => 'Hoofdmenu',
 			'nav-mobile' => 'Menu voor mobile'
-		) );	
+		) );
 	}
 
 
@@ -38,9 +38,9 @@
 	Images
 	==========================================================================*/
 
-	if ( function_exists( 'add_theme_support' ) ) { 
+	if ( function_exists( 'add_theme_support' ) ) {
 		// Add support for Post Thumbnails
-		add_theme_support( 'post-thumbnails' ); 
+		add_theme_support( 'post-thumbnails' );
 
 		// Add support for selected post formats
 		add_theme_support( 'post-formats', array( 'image', /*'gallery',*/ 'video' ) );
@@ -64,7 +64,7 @@
 
 	}
 
-	if ( function_exists( 'add_image_size' ) ) { 
+	if ( function_exists( 'add_image_size' ) ) {
 		add_image_size( 'wide', 1280, 720, true ); // Single Header
 		add_image_size( 'medium', 800, 450, true ); // Medium size
 	}
@@ -78,7 +78,7 @@
 
 	// If Dynamic Sidebar Exists
 	if(function_exists('register_sidebar')) {
-	
+
 		register_sidebar(array(
 			'name' => 'Over mij',
 			'id' => 'widgets-about',
@@ -109,7 +109,7 @@
 			'beore_title' => '<h2>',
 			'after_title' => '</h2>',
 		));
-		
+
 		register_sidebar(array(
 			'name' => 'Pages',
 			'id' => 'widgets-pages',
@@ -128,9 +128,9 @@
 			'after_widget' => '</aside>',
 			'beore_title' => '<h2>',
 			'after_title' => '</h2>',
-		));		
+		));
 	}
-	
+
 	// Include widget "Contact"
 	include_once( rtrim( dirname( __FILE__ ), '/' ) . '/inc/widget-contact.php' );
 
@@ -140,7 +140,7 @@
    ========================================================================== */
 
 	// Add Actions
-	add_action( 'widgets_init', function(){ register_widget( 'ContactWidget' ); });	
+	add_action( 'widgets_init', function(){ register_widget( 'ContactWidget' ); });
 
 	// Remove Actions
 	remove_action( 'wp_head', 'feed_links_extra', 3 ); // Display the links to the extra feeds such as category feeds

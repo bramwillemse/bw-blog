@@ -15,7 +15,7 @@
                 <footer class="postmetadata">
                     	<?php the_category(' '); ?>
                 </footer><!-- /.postmetadata -->
-                        
+
                 <div id="comments" class="comments">
                     <?php comments_template(); ?>
                 </div><!-- /#comments -->
@@ -25,18 +25,17 @@
             <?php get_template_part('inc/widgets-left'); ?>
 
         </div><!-- /.container-content -->
-    
-	<?php endwhile; ?>
 
+	<?php endwhile; ?>
     <?php else : ?>
 
         <h2 class="center">Niet gevonden</h2>
         <p class="center">Sorry, maar je zoekt naar een pagina die niet bestaan, probeer eens te zoeken rechtsboven op de site.</p>
 
     <?php endif; ?>
-                
+
 </article><!-- #article -->
-       
+
 <?php get_template_part('inc/widgets-right'); ?>
 
 <?php get_footer(); ?>

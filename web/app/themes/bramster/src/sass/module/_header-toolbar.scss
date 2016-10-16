@@ -1,8 +1,12 @@
-.header-toolbar {	
+/*
+    Header toolbar
+
+    Houses logo, main menu and possibly more
+
+*/
+.header-toolbar {
 	background: $white;
 
-	// border-bottom: darken($grey,25%) 1px solid;	
-	
 	@include breakpoint(small) {
 		padding-bottom: $vertical-margin * 2;
 	}
@@ -16,8 +20,9 @@
 .page .header-toolbar {
 	margin-bottom: 0;
 }
-.portfolio .header-toolbar {
-	// margin-bottom: $vertical-margin * 2;
+
+.archive .header-toolbar {
+	margin-bottom: $vertical-margin;
 }
 
 .blog .header-toolbar {

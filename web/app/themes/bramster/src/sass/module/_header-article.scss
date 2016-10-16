@@ -1,17 +1,17 @@
-.header-article { 
+.header-article {
 	margin-bottom: $vertical-margin;
-	
+
 	padding-top: 33%;  /* slope */
 	height: 225px;  /* start height */
-	
+
 	background: darken($grey,25%);
-	
+
 	background-size: cover;
 	-moz-background-size: cover;  /* Firefox 3.6 */
 	background-position: center;  /* Internet Explorer 7/8 */
-	
+
 	line-height: 0;
-	
+
 	h1 {
 		@include grid(48,2);
 		position: absolute;
@@ -19,7 +19,7 @@
 		margin-bottom: $vertical-margin / $font-huge !important;
 
 		text-shadow: rgba($black, 0.9) 1px 2px 5px;
-	
+
 		@include font-size($font-huge,1.2);
 		color: $white;
 

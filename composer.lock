@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3b44a2750ef12b1d5f9706648351f593",
-    "content-hash": "9557ad00a4f2d6dfa4041b57e2024a94",
+    "hash": "2d656b17830e516f573b9711e4197e0c",
+    "content-hash": "c43f315f37dec14fd2f5b9a6d24e4a77",
     "packages": [
         {
             "name": "advanced-custom-fields/acf-pro",
@@ -37,7 +37,7 @@
         },
         {
             "name": "bramwillemse/wp-normalize",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/bramwillemse/wp-normalize/archive/master.zip",
@@ -413,15 +413,15 @@
         },
         {
             "name": "wpackagist-plugin/disqus-comment-system",
-            "version": "2.85",
+            "version": "2.86",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/disqus-comment-system/",
-                "reference": "trunk"
+                "reference": "tags/2.86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disqus-comment-system.zip",
+                "url": "https://downloads.wordpress.org/plugin/disqus-comment-system.2.86.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -433,15 +433,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "2.9.8",
+            "version": "3.0.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/2.9.8"
+                "reference": "tags/3.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.2.9.8.zip",
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.3.0.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -453,15 +453,15 @@
         },
         {
             "name": "wpackagist-plugin/google-analytics-for-wordpress",
-            "version": "5.5.2",
+            "version": "5.5.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/google-analytics-for-wordpress/",
-                "reference": "tags/5.5.2"
+                "reference": "tags/5.5.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analytics-for-wordpress.5.5.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-for-wordpress.5.5.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -510,6 +510,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-importer/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-seo",
+            "version": "3.7.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
+                "reference": "tags/3.7.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.7.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
         },
         {
             "name": "wpackagist-plugin/wp-super-cache",

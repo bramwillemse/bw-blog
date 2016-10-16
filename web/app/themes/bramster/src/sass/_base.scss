@@ -1,11 +1,11 @@
-*, 
+*,
 *:before,
-*:after { 
-   -webkit-box-sizing: border-box; 
-   -moz-box-sizing:    border-box; 
-   box-sizing:         border-box; 
+*:after {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing:    border-box;
+   box-sizing:         border-box;
 }
-// 
+//
 body {
 	width: 100%;
 	margin: 0; padding: 0;
@@ -13,25 +13,25 @@ body {
 	font-size: $font-size;
 	line-height: 1.5em;
 	color: $grey;
-	background: $grey;
-	overflow-x: hidden;	
+	background: $white;
+	overflow-x: hidden;
 }
 
 h1, h2, h3 {
-	margin: 0; 
-	padding: 0; 
+	margin: 0;
+	padding: 0;
 
 	font-family: $skolar;
 	font-weight: 600;
 	color: darken($grey, 25%);
 }
-h1 { 
+h1 {
 	margin-bottom: ($vertical-margin / $font-large) * 2;
 
 	@include font-size($font-large,1);
 
-	a { 
-		color: $grey; 
+	a {
+		color: $grey;
 
 		@include transition(color 0.15s);
 
@@ -44,7 +44,7 @@ h1 {
 		}
 	}
 
-	// MEDIA QUERIES	
+	// MEDIA QUERIES
 	@include breakpoint(small) {
 		margin-bottom: ($vertical-margin / $font-huge) * 2;
 
@@ -53,59 +53,59 @@ h1 {
 	@include breakpoint(medium){
 		margin-bottom: ($vertical-margin / $font-monster) * 2;
 
-		@include font-size($font-monster, 1); 
+		@include font-size($font-monster, 1);
 	}
 }
 h1 a:hover { text-decoration: none;  }
-h2 { 
+h2 {
 	@include font-size($font-medium, 1);
 	margin-top: ($vertical-margin / $font-medium) * 2;
 	margin-bottom: $vertical-margin / $font-medium;
 
-	// MEDIA QUERIES	
+	// MEDIA QUERIES
 	@include breakpoint(medium){
 		@include font-size($font-large, 1);
 		margin-top: ($vertical-margin / $font-large) * 2;
 		margin-bottom: $vertical-margin / $font-large;
 	}
 }
-h3 { 
+h3 {
 	@include font-size($font-normal, 1);
 	margin-top: $vertical-margin*2;
 	margin-bottom: $vertical-margin;
 }
 
-img, 
-a img { 
+img,
+a img {
 	max-width: 100%;
 	height: auto;
-	
-	border: none; 
+
+	border: none;
 }
 
-p { 
+p {
 	margin-top: 0;
 	margin-bottom: $vertical-margin;
 }
-small { 
-	font-size: 0.75em; 
+small {
+	font-size: 0.75em;
 }
 
 strong,
-b { 
-	font-weight: 600 
+b {
+	font-weight: 600
 }
 em,
 i {
 	font-style: italic;
 }
 
-a { 
-	color: $first; 
+a {
+	color: $first;
 	text-decoration: none;
-	&:hover, 
-	&:focus { 
-		color: lighten($first,12.5%); 
+	&:hover,
+	&:focus {
+		color: lighten($first,12.5%);
 		text-decoration: none;
 	}
 	&:active {
@@ -139,10 +139,10 @@ a {
 	// 	}
 	// 	&:focus:before,
 	// 	&:active:before {
-	// 		color: darken(#33ccff, 12.5%); 
+	// 		color: darken(#33ccff, 12.5%);
 	// 	}
 
-	// }	
+	// }
 	// &[href*="plus.google.com"] {
 	// 	&::before {
 	// 		content: '\f613';
@@ -161,12 +161,12 @@ a {
 	// 	}
 	// 	&:hover:before {
 	// 		color:   #0e76a8;
-	// 	}		
+	// 	}
 	// 	&:active:before,
 	// 	&:focus:before {
 	// 		color: darken(#0e76a8, 12.5%);
 	// 	}
-	// }	
+	// }
 	// &[href*="dribbble.com"]::before {
 	// 	content: '\f660';
 	// 	color:   #ea4c89;
@@ -198,25 +198,25 @@ a {
 	// &[href*="codepen.io"]::before {
 	// 	content: '\f216';
 	// 	color:   #000;
-	// }	
+	// }
 }
 
-ul, 
-ul li, 
-li { 
-	margin: 0; 
-	padding: 0; 
-	list-style: none; 
-}	
+ul,
+ul li,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
 
-blockquote { 
-	margin: $vertical-margin 0 $vertical-margin $vertical-margin; 
-	padding-left: $vertical-margin; 
-	border-left: 3px solid $grey; 
+blockquote {
+	margin: $vertical-margin 0 $vertical-margin $vertical-margin;
+	padding-left: $vertical-margin;
+	border-left: 3px solid $grey;
 	p {
 		font-family: $georgia;
 		@include font-size($font-normal);
-		font-style: italic; 
+		font-style: italic;
 	}
 }
 
@@ -225,16 +225,16 @@ blockquote {
 ::-moz-selection { background: $second; color: $black; text-shadow: none; }
 ::selection { background: $second; color: $black; text-shadow: none; }
 iframe { max-width: 100%; }
-		
+
 	/* WordPress classes */
 	.alignleft { float: left; }
 	.alignright { float: right; }
 	img.alignleft { float: left; margin: 0; }
 	img.alignright { float: right; margin: 0; }
 	img.aligncenter { display: block; margin: 0 auto; }
-	
 
-	
+
+
 	.home .vvqbox { max-width: 450px !important; }
 
 /* HACKS */

@@ -33,6 +33,12 @@ if (file_exists($env_config)) {
 }
 
 /**
+ * WP Super Cache settings
+ */
+define('WP_CACHE', env('WP_CACHE'));
+define('WPCACHEHOME', env('WPCACHEHOME'));
+
+/**
  * URLs
  */
 define('WP_HOME', env('WP_HOME'));

@@ -81,7 +81,7 @@
       "package": {
         "name": "bramwillemse/wp-normalize",
         "type": "wordpress-plugin",
-        "version": "1.0.4",
+        "version": "1.0.5",
         "dist": {
           "type": "zip",
           "url":  "https://github.com/bramwillemse/wp-normalize/archive/master.zip"
@@ -120,6 +120,7 @@
       "wpackagist-plugin/ewww-image-optimizer": "*",
       "wpackagist-plugin/iwp-client": "*",
       "wpackagist-plugin/wordpress-importer": "*",
+      "wpackagist-plugin/wordpress-seo": "*",
       "wpackagist-plugin/disqus-comment-system": "*",
       "wpackagist-plugin/google-analytics-for-wordpress": "*",
       "wpackagist-plugin/wp-super-cache": "*",

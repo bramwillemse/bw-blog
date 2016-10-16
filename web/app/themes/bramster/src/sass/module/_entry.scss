@@ -1,17 +1,17 @@
 .entry {
-	margin-bottom: $vertical-margin;
+	margin-bottom: $vertical-margin*2;
 
 	ul {
 		margin-bottom: $vertical-margin;
 		margin-left: 2em;
+
 		li {
-			list-style-type: square; 
+			list-style-type: square;
 		}
 	}
 
 	p,
 	img {
 		margin-bottom: $vertical-margin;
-
 	}
 }
