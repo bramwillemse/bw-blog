@@ -21,39 +21,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <!-- Content -->
-    <title><?php wp_title('|', true, 'right') . bloginfo('name'); ?></title>
-    <meta name="description" content="<?php if ( is_single() ) {
-            single_post_title('', true);
-        } else {
-            bloginfo('name'); echo " | "; bloginfo('description');
-        }
-        ?>" />
+    <?php
+    $pageTitle;
+
+    if ( is_single() ) {
+        $pageTitle = wp_title('|', false, 'right') . get_bloginfo('name');
+    } else {
+        $pageTitle = get_bloginfo('name') . ' | ' . get_bloginfo('description');
+    }
+    ?>
+
+    <title><?php echo $pageTitle; ?></title>
 
 	<meta name="author" content="<?php bloginfo('name'); ?>">
 	<meta name="copyright" content="<?php bloginfo('name'); ?> 2007-2016">
 
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="<?php echo $pageTitle; ?>">
+
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@bramwillemse">
-    <meta name="twitter:title" content="<?php wp_title('|', true, 'right'); ?>">
-    <meta name="twitter:description" content="<?php if ( is_single() ) {
-            single_post_title('', true);
-        } else {
-            bloginfo('name'); echo ' | '; bloginfo('description');
-        }
-        ?>" />
+    <meta name="twitter:title" content="<?php echo $pageTitle; ?>">
     <meta name="twitter:creator" content="@bramwillemse">
 
     <!-- Open Graph data -->
-    <meta property="og:title" content="<?php wp_title(); ?>">
+    <meta property="og:title" content="<?php echo $pageTitle; ?>">
     <meta property="og:type" content="article" />
     <meta property="og:url" content="<?php the_permalink();?>" />
-    <meta property="og:description" content="<?php if ( is_single() ) {
-            single_post_title('', true);
-        } else {
-            bloginfo('name'); echo " | "; bloginfo('description');
-        }
-        ?>" />
     <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
 
     <!-- Image data -->
@@ -61,12 +56,13 @@
     global $post;
     if ( isset($post->ID) && has_post_thumbnail( $post->ID ) ) :
         $image_id = get_post_thumbnail_id($post->ID);
-        $image_url = wp_get_attachment_image_src($image_id,'thumbnail');
+        $image_url = wp_get_attachment_image_src($image_id,'medium');
         $image_url = $image_url[0];
     ?>
         <link rel="image_src" href="<?php echo $image_url; ?>" >
         <meta name="twitter:image" content="<?php echo $image_url; ?>">
         <meta property="og:image" content="<?php echo $image_url; ?>" />
+        <meta itemprop="image" content="<?php echo $image_url; ?>">
     <?php endif; ?>
 
     <!-- Icons -->

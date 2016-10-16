@@ -120,6 +120,7 @@
       "wpackagist-plugin/ewww-image-optimizer": "*",
       "wpackagist-plugin/iwp-client": "*",
       "wpackagist-plugin/wordpress-importer": "*",
+      "wpackagist-plugin/wordpress-seo": "*",
       "wpackagist-plugin/disqus-comment-system": "*",
       "wpackagist-plugin/google-analytics-for-wordpress": "*",
       "wpackagist-plugin/wp-super-cache": "*",
