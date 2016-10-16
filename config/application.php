@@ -32,7 +32,11 @@ if (file_exists($env_config)) {
     require_once $env_config;
 }
 
+/**
+ * WP Super Cache settings
+ */
 define('WP_CACHE', env('WP_CACHE'));
+define('WPCACHEHOME', env('WPCACHEHOME'));
 
 /**
  * URLs
