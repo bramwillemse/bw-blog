@@ -1,4 +1,4 @@
-<?php 
+<?php
 class themeSetup {
 
 	/**
@@ -8,8 +8,8 @@ class themeSetup {
 	 */
     public function __construct() {
 	   	// Stylesheets
-	   	add_action('wp_enqueue_scripts', array( &$this, 'load_stylesheet' ) ); // Add Theme Stylesheet	
-		
+	   	add_action('wp_enqueue_scripts', array( &$this, 'load_stylesheet' ) ); // Add Theme Stylesheet
+
 	   	// Scripts
 		// add_action( 'init', array( &$this, 'header_scripts' ) ) ; // Add Custom Scripts to wp_head
 		add_action( 'wp_footer', array( &$this, 'footer_scripts')); // Add Custom Scripts to wp_footer
@@ -17,14 +17,8 @@ class themeSetup {
 		add_filter( 'style_loader_src',  array( &$this, 't5_remove_version' )); // Remove version numbers from stylesheets
 		add_filter( 'script_loader_src', array( &$this, 't5_remove_version' )); // Remove version numbers from scripts
 
-		// WordPress UI
-		// add_action('admin_menu', array( $this, 'remove_menus' )); // remove items from dashboard menu
-
-
 		// WP backend
 		// add_action( 'admin_menu', array( &$this, 'adjust_the_wp_menu'), 999 ); // Remove items admin submenu
-		// add_filter( 'admin_footer_text', array( &$this, 'custom_admin_footer')); // Customize admin footer text
-
     }
 
 
@@ -55,10 +49,11 @@ class themeSetup {
 		// Load footer scripts (before </body>)
 		public function footer_scripts() {
 		    if (!is_admin()) {
-				
+
 				wp_enqueue_script('jquery',false, null, false); // Reregister WordPress jQuery in footer
-						        
+
 		        wp_register_script('footerscripts', get_template_directory_uri() . '/dist/js/scripts.min.js', array(), null); // Main scripts
+
 		        wp_enqueue_script('footerscripts'); // Enqueue it!
 		    }
 		}
@@ -78,7 +73,7 @@ class themeSetup {
 
 
 		// remove jump to content in more-link
-		public function remove_more_jump_link($link) { 
+		public function remove_more_jump_link($link) {
 			$offset = strpos($link, '#more-');
 			if ($offset) {
 				$end = strpos($link, '"',$offset);
@@ -88,7 +83,7 @@ class themeSetup {
 			}
 			return $link;
 		}
-		
+
 
 	/* 	=============================================================================
 	   	WordPress UI
@@ -99,13 +94,13 @@ class themeSetup {
 			global $menu;
 			$restricted = array(
 				// __('Dashboard'),
-				// __('Posts'), 
-				// __('Media'), 
-				// __('Links'), 
-				// __('Pages'), 
-				// __('Appearance'), 
-				// __('Tools'), 
-				// __('Users'), 
+				// __('Posts'),
+				// __('Media'),
+				// __('Links'),
+				// __('Pages'),
+				// __('Appearance'),
+				// __('Tools'),
+				// __('Users'),
 				// __('Settings'),
 				// __('Comments')
 				// __('Plugins')
@@ -128,7 +123,7 @@ class themeSetup {
 
 
 
-	
+
 }
 new themeSetup();
 
@@ -143,7 +138,7 @@ new themeSetup();
 	 * Allows you to pass in an array of parts and output them in your theme
 	 * e.g. <?php get_template_parts(array('part-1', 'part-2')); ?>
 	 *
-	 * @param 	array 
+	 * @param 	array
 	 * @return 	void
 	 * @author 	Keir Whitaker
 	 **/
