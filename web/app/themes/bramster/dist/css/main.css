@@ -2,6 +2,18 @@
 /* COMPASS */
 /* =========== Mixins */
 /* Calculate fluid ratio based on two dimensions (width/height) */
+/*
+ * Breakpoints
+ *
+ * @example:
+ * .classname {
+ *    max-width: 100%;
+ *
+ *    @include breakpoint(small) {
+ *        max-width: 20em;
+ *    }
+ * }
+ */
 /* THEME */
 /*-----------------------------------------------------------------------
 Themakleuren: 
@@ -2353,7 +2365,7 @@ img.aligncenter {
   width: 100%;
   margin-left: 0%;
   margin-right: 0%; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 64em) {
     /* line 1, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/layout/_l-container-content.scss */
     .l-container-content {
       float: left;
@@ -2427,7 +2439,7 @@ img.aligncenter {
       width: 72.91667%;
       margin-left: 1.04167%;
       margin-right: 1.04167%; } }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 64em) {
     /* line 1, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/layout/_l-column.scss */
     .l-column {
       float: left;
@@ -2435,7 +2447,7 @@ img.aligncenter {
       margin-left: 1.04167%;
       margin-right: 1.04167%; } }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64em) {
   /* line 13, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/layout/_l-column.scss */
   .l-container-content .l-column,
   .l-container-content .l-column {
@@ -2445,7 +2457,7 @@ img.aligncenter {
     margin-right: 0%;
     float: right; } }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64em) {
   /* line 21, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/layout/_l-column.scss */
   .l-column-medium {
     float: left;
@@ -2468,7 +2480,7 @@ img.aligncenter {
     margin-right: 25%;
     float: right; } }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 90em) {
   /* line 1, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/layout/_l-column-big.scss */
   .l-column-big {
     float: left;
@@ -2490,7 +2502,7 @@ img.aligncenter {
       margin-left: 2.08333%;
       margin-right: 2.08333%; } }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64em) {
   /* line 10, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/layout/_l-column-small.scss */
   .l-container-content .l-column-small,
   .l-container-content .column-small {
@@ -2547,7 +2559,7 @@ img.aligncenter {
         margin-right: 0%;
         font-size: 3em;
         line-height: 1.2em; } }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 64em) {
       /* line 15, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_header-article.scss */
       .header-article h1 {
         float: left;
@@ -2612,7 +2624,7 @@ img.aligncenter {
   /* Internet Explorer 7/8 */
   border-bottom: black 1px solid;
   line-height: 0; }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 80em) {
     /* line 1, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_header-video.scss */
     .header-video {
       padding-top: 40%; } }
@@ -2646,7 +2658,7 @@ h1.title-video {
       margin-bottom: 0.66667rem;
       font-size: 3em;
       line-height: 1em; } }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 64em) {
     /* line 31, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_header-video.scss */
     h1.title-video {
       margin-bottom: 0.5rem;
@@ -2899,7 +2911,7 @@ h1.title-video {
     /* line 12, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_pitch.scss */
     .pitch li h2 {
       margin-top: 0; }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 64em) {
       /* line 9, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_pitch.scss */
       .pitch li {
         float: left;
@@ -2943,7 +2955,7 @@ h1.title-video {
 .content {
   float: right;
   margin-bottom: 2rem; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 64em) {
     /* line 1, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_content.scss */
     .content {
       float: right; } }
@@ -3038,14 +3050,14 @@ h1.title-video {
       line-height: 1.8em;
       left: 0;
       transform: translate(0, -50%); } }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 64em) {
     /* line 1, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_project.scss */
     .project {
       float: left;
       width: 33.33333%;
       margin-left: 0%;
       margin-right: 0%; } }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 90em) {
     /* line 1, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_project.scss */
     .project {
       float: left;
@@ -3162,7 +3174,7 @@ h1.title-video {
     font-size: 0.8em;
     line-height: 1.2em; } }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 80em) {
   /* line 1, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_widget-contact.scss */
   .widget-contact {
     margin-top: 0.25em;
