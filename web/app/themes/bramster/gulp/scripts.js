@@ -47,8 +47,8 @@ gulp.task('scripts', ['scripts:lint'], function(){
     .pipe(rename({
         suffix: '.min'
     }))
-    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./dist/js'))
+    .pipe(sourcemaps.write('.'))
     .pipe(reload({stream:true}))
 });
 

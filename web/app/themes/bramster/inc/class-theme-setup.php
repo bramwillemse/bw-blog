@@ -11,7 +11,6 @@ class themeSetup {
         add_action('wp_enqueue_scripts', array( &$this, 'load_stylesheet' ) ); // Add Theme Stylesheet
 
         // Scripts
-        // add_action( 'init', array( &$this, 'header_scripts' ) ) ; // Add Custom Scripts to wp_head
         add_action( 'wp_footer', array( &$this, 'footer_scripts')); // Add Custom Scripts to wp_footer
         add_filter( 'wp_default_scripts', array( &$this, 'dequeue_jquery_migrate' ) ); // Remove jQuery Migrate script
         add_filter( 'style_loader_src',  array( &$this, 't5_remove_version' )); // Remove version numbers from stylesheets
@@ -36,15 +35,6 @@ class themeSetup {
     /*  =============================================================================
         Scripts
         ========================================================================== */
-
-        // Load header scripts (in <head>)
-        // public function header_scripts() {
-        //     if (!is_admin()) {
-        //      // registers script, stylesheet local path, no dependency, no version, loads in header
-        //         wp_register_script('headerscripts', get_stylesheet_directory_uri() . '/dist/js/scripts-header.min.js', false, null, false ); // Header scripts
-        //         wp_enqueue_script('headerscripts'); // Enqueue it!
-        //     }
-        // }
 
         // Load footer scripts (before </body>)
         public function footer_scripts() {

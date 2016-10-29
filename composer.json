@@ -36,7 +36,7 @@
       "package": {
         "name": "advanced-custom-fields/acf-pro",
         "type": "wordpress-plugin",
-        "version": "5.4.5",
+        "version": "5.4.8",
         "dist": {
           "type": "zip",
           "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9MzM5OTN8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE0LTA3LTA5IDEwOjAwOjEz"
@@ -105,6 +105,21 @@
           "composer/installers": "*"
         }
       }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "baardbaard/bb-twitterfeed",
+        "type": "wordpress-plugin",
+        "version": "0.4",
+        "dist": {
+          "type": "zip",
+          "url":  "https://github.com/baardbaard/bb-twitterfeed/archive/master.zip"
+        },
+        "require" : {
+          "composer/installers": "*"
+        }
+      }
     }
   ],
   "require": {
@@ -125,7 +140,8 @@
       "wpackagist-plugin/google-analytics-for-wordpress": "*",
       "wpackagist-plugin/wp-super-cache": "*",
     "bramwillemse/wp-normalize": "*",
-    "bramwillemse/bramwillemsenl-setup": "*"
+    "bramwillemse/bramwillemsenl-setup": "*",
+    "baardbaard/bb-twitterfeed": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"

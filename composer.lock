@@ -4,15 +4,29 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2d656b17830e516f573b9711e4197e0c",
-    "content-hash": "c43f315f37dec14fd2f5b9a6d24e4a77",
+    "hash": "7ee361a6ead45bc25e50d7188ec52590",
+    "content-hash": "f4d47c104e2c6a1f9c83adb2c8f043bb",
     "packages": [
         {
             "name": "advanced-custom-fields/acf-pro",
-            "version": "5.4.5",
+            "version": "5.4.8",
             "dist": {
                 "type": "zip",
                 "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9MzM5OTN8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE0LTA3LTA5IDEwOjAwOjEz",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "*"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "baardbaard/bb-twitterfeed",
+            "version": "0.4",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/baardbaard/bb-twitterfeed/archive/master.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -433,15 +447,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "3.0.2",
+            "version": "3.1.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/3.0.2"
+                "reference": "tags/3.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.3.0.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.3.1.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -453,15 +467,15 @@
         },
         {
             "name": "wpackagist-plugin/google-analytics-for-wordpress",
-            "version": "5.5.3",
+            "version": "5.5.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/google-analytics-for-wordpress/",
-                "reference": "tags/5.5.3"
+                "reference": "tags/5.5.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analytics-for-wordpress.5.5.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-for-wordpress.5.5.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -513,15 +527,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "3.7.0",
+            "version": "3.7.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/3.7.0"
+                "reference": "tags/3.7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.7.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.7.1.zip",
                 "reference": null,
                 "shasum": null
             },
