@@ -78,7 +78,7 @@
 
 <body <?php body_class(); ?>>
 
-	<header id="top" class="header header-toolbar">
+	<header id="top" class="l-header toolbar">
     	<a href="<?php bloginfo('url'); ?>" class="logo column column-small">
     		<span class="logo-name"><?php bloginfo('name'); ?></span>
         	<span class="logo-description"><?php bloginfo('description'); ?></span>

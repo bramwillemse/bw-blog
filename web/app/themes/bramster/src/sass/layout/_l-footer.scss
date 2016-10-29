@@ -1,14 +1,3 @@
 .l-footer {
-	@include grid (48);
-	ul { 
-		@include grid(12,0.5);
-		li { 
-			
-			list-style: none; 
-		}
-		ul { 
-			width: 100%;
-			margin: 0; 
-		}
-	}
+    @include grid (48);
 }

@@ -12,7 +12,7 @@ body {
 	font-family: $proxima-nova;
 	font-size: $font-size;
 	line-height: 1.5em;
-	color: $grey;
+	color: $grey-50;
 	background: $white;
 	overflow-x: hidden;
 }
@@ -23,7 +23,7 @@ h1, h2, h3 {
 
 	font-family: $skolar;
 	font-weight: 600;
-	color: darken($grey, 25%);
+	color: darken($grey-50, 25%);
 }
 h1 {
 	margin-bottom: ($vertical-margin / $font-large) * 2;
@@ -31,7 +31,7 @@ h1 {
 	@include font-size($font-large,1);
 
 	a {
-		color: $grey;
+		color: $grey-50;
 
 		@include transition(color 0.15s);
 
@@ -212,7 +212,7 @@ li {
 blockquote {
 	margin: $vertical-margin 0 $vertical-margin $vertical-margin;
 	padding-left: $vertical-margin;
-	border-left: 3px solid $grey;
+	border-left: 3px solid $grey-50;
 	p {
 		font-family: $georgia;
 		@include font-size($font-normal);

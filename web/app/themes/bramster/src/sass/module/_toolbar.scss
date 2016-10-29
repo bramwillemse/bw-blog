@@ -1,0 +1,44 @@
+/*
+    Header toolbar
+
+    Houses logo, main menu and possibly more
+*/
+.toolbar {
+	@include breakpoint(small) {
+		padding-bottom: $vertical-margin * 2;
+	}
+
+	@include breakpoint(medium) {
+		padding-top: $vertical-margin * 2;
+	}
+
+    &--footer {
+        padding: 0;
+
+        .nav-main a {
+            background-color: $grey-80;
+        }
+
+        @include breakpoint(small) {
+            padding-bottom: 0;
+        }
+
+        @include breakpoint(medium) {
+            padding-top: 0;
+        } 
+    }    
+}
+
+    // WordPress-page specific styling
+    .single sheader-toolbar,
+    .page .header-toolbar {
+    	margin-bottom: 0;
+    }
+
+    .archive .header-toolbar {
+    	margin-bottom: $vertical-margin;
+    }
+
+    .blog .header-toolbar {
+    	margin-bottom: $vertical-margin;
+    }

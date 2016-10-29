@@ -16,7 +16,7 @@
 		display: inline-block;
 		margin: 0;
 
-		background-color: $grey;
+		background-color: $grey-50;
 		padding: 0.333em 0.5em; 
 		
 		color: $white; 
@@ -26,7 +26,7 @@
 		text-decoration: none;
 	}
 	span.current {
-		color: $grey; 
+		color: $grey-50; 
 		background: $second;
 		text-decoration: none;
 	}
@@ -35,7 +35,7 @@
 	}
 	.dots {
 		background-color: transparent;
-		color: $grey;
+		color: $grey-50;
 	}
 	.next {
 		float: right;

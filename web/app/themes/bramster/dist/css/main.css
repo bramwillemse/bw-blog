@@ -2406,25 +2406,20 @@ img.aligncenter {
 .l-tijdlijn .postmetadata {
   margin: 0 0 3px; }
 
+/* line 1, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/layout/_l-header.scss */
+.l-header,
+.header {
+  float: left;
+  position: relative;
+  width: 100%;
+  margin: 0; }
+
 /* line 1, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/layout/_l-footer.scss */
 .l-footer {
   float: left;
   width: 100%;
   margin-left: 0%;
   margin-right: 0%; }
-  /* line 3, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/layout/_l-footer.scss */
-  .l-footer ul {
-    float: left;
-    width: 22.91667%;
-    margin-left: 1.04167%;
-    margin-right: 1.04167%; }
-    /* line 5, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/layout/_l-footer.scss */
-    .l-footer ul li {
-      list-style: none; }
-    /* line 9, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/layout/_l-footer.scss */
-    .l-footer ul ul {
-      width: 100%;
-      margin: 0; }
 
 /* line 1, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/layout/_l-column.scss */
 .l-column {
@@ -2516,12 +2511,48 @@ img.aligncenter {
 .blog {
   background: #F9F9F9; }
 
-/* line 1, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_header.scss */
-.header {
-  float: left;
-  position: relative;
-  width: 100%;
-  margin: 0; }
+/*
+    Header toolbar
+
+    Houses logo, main menu and possibly more
+*/
+@media screen and (min-width: 29em) {
+  /* line 6, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_toolbar.scss */
+  .toolbar {
+    padding-bottom: 2rem; } }
+
+@media screen and (min-width: 55em) {
+  /* line 6, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_toolbar.scss */
+  .toolbar {
+    padding-top: 2rem; } }
+
+/* line 15, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_toolbar.scss */
+.toolbar--footer {
+  padding: 0; }
+  /* line 18, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_toolbar.scss */
+  .toolbar--footer .nav-main a {
+    background-color: #222; }
+  @media screen and (min-width: 29em) {
+    /* line 15, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_toolbar.scss */
+    .toolbar--footer {
+      padding-bottom: 0; } }
+  @media screen and (min-width: 55em) {
+    /* line 15, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_toolbar.scss */
+    .toolbar--footer {
+      padding-top: 0; } }
+
+/* line 33, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_toolbar.scss */
+.single sheader-toolbar,
+.page .header-toolbar {
+  margin-bottom: 0; }
+
+/* line 38, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_toolbar.scss */
+.archive .header-toolbar {
+  margin-bottom: 1rem; }
+
+/* line 42, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_toolbar.scss */
+.blog .header-toolbar {
+  margin-bottom: 1rem; }
 
 /* line 1, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_header-article.scss */
 .header-article {
@@ -2577,37 +2608,6 @@ img.aligncenter {
 /* line 6, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_header-title.scss */
 .header-title {
   margin-top: 1rem; }
-
-/*
-    Header toolbar
-
-    Houses logo, main menu and possibly more
-
-*/
-/* line 7, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_header-toolbar.scss */
-.header-toolbar {
-  background: #F9F9F9; }
-  @media screen and (min-width: 29em) {
-    /* line 7, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_header-toolbar.scss */
-    .header-toolbar {
-      padding-bottom: 2rem; } }
-  @media screen and (min-width: 55em) {
-    /* line 7, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_header-toolbar.scss */
-    .header-toolbar {
-      padding-top: 2rem; } }
-
-/* line 19, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_header-toolbar.scss */
-.single sheader-toolbar,
-.page .header-toolbar {
-  margin-bottom: 0; }
-
-/* line 24, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_header-toolbar.scss */
-.archive .header-toolbar {
-  margin-bottom: 1rem; }
-
-/* line 28, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_header-toolbar.scss */
-.blog .header-toolbar {
-  margin-bottom: 1rem; }
 
 /* line 1, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_header-video.scss */
 .header-video {
@@ -2685,7 +2685,6 @@ h1.title-video {
   width: 100%;
   clear: both;
   padding: 1em;
-  color: #333;
   text-decoration: none;
   text-align: left;
   transition: background-color 0.15s;
@@ -2704,14 +2703,7 @@ h1.title-video {
       margin-right: 2.08333%;
       padding: 0.5em 0;
       text-align: right; } }
-  /* line 29, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_logo.scss */
-  .logo:hover, .logo:focus {
-    color: #009cd0;
-    text-decoration: none; }
-  /* line 34, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_logo.scss */
-  .logo:active {
-    color: #005977; }
-  /* line 38, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_logo.scss */
+  /* line 28, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_logo.scss */
   .logo .logo-name {
     display: block;
     font-size: 1em;
@@ -2719,12 +2711,23 @@ h1.title-video {
     text-transform: uppercase;
     letter-spacing: 0.075em;
     font-weight: 600; }
-  /* line 47, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_logo.scss */
+  /* line 37, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_logo.scss */
   .logo .logo-description {
     display: block;
     font-size: 0.8em;
     line-height: 1em;
     font-style: italic; }
+
+/* line 45, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_logo.scss */
+a.logo {
+  color: #333; }
+  /* line 49, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_logo.scss */
+  a.logo:hover, a.logo:focus {
+    color: #009cd0;
+    text-decoration: none; }
+  /* line 54, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_logo.scss */
+  a.logo:active {
+    color: #005977; }
 
 /* line 1, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_nav.scss */
 .nav {
@@ -3354,7 +3357,7 @@ a.more-link {
   background-color: #006c90;
   font-weight: 600;
   color: #F9F9F9;
-  transition: background-color 0.15s; }
+  transition: all 0.15s ease-in-out, background-color 0.15s; }
   /* line 9, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_more-link.scss */
   a.more-link:hover, a.more-link:focus {
     background-color: #009cd0; }
@@ -3390,41 +3393,27 @@ a.more-link {
 
 /* line 1, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_footer.scss */
 .footer {
-  padding: 3em 1em;
+  padding: 3rem 0;
   background-color: #333;
-  font-size: 0.8em;
-  line-height: 1.5em;
   color: #F9F9F9;
-  text-align: center; }
-  /* line 9, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_footer.scss */
-  .footer h3 {
-    color: #F9F9F9; }
+  text-align: left; }
+
+/* line 10, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_footer.scss */
+.footer__content {
+  float: left;
+  width: 47.91667%;
+  margin-left: 25%;
+  margin-right: 2.08333%; }
   /* line 13, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_footer.scss */
-  .footer a {
-    padding: 0.25em 0.5em;
-    background: #006c90;
+  .footer__content h3 {
+    color: #F9F9F9; }
+  /* line 17, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_footer.scss */
+  .footer__content a {
     color: #F9F9F9;
-    transition: background-color 0.15s;
     transition: color 0.15s; }
     /* line 23, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_footer.scss */
-    .footer a:hover, .footer a:focus {
-      background-color: #009cd0;
-      text-decoration: none; }
-    /* line 28, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_footer.scss */
-    .footer a:active {
-      background-color: #005977; }
-    /* line 32, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_footer.scss */
-    .footer a.rss {
-      background: #ffff55;
-      color: #000;
-      text-decoration: none; }
-      /* line 38, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_footer.scss */
-      .footer a.rss:hover, .footer a.rss:focus {
-        background: #ffff6e;
-        text-decoration: none; }
-      /* line 44, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_footer.scss */
-      .footer a.rss:active {
-        background: #ffff15; }
+    .footer__content a:hover, .footer__content a:focus {
+      text-decoration: underline; }
 
 /* STATE */
 /* line 1, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/state/_is-hidden.scss */
@@ -3438,14 +3427,12 @@ a.more-link {
 /* line 1, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/state/_is-scaled.scss */
 .is-scaled {
   position: relative;
-  transform-origin: center;
-  transition: all 0.15s ease; }
+  transform-origin: left center;
+  transition: all 0.333s ease-in-out; }
   /* line 12, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/state/_is-scaled.scss */
   .is-scaled:hover, .is-scaled:focus {
-    transform: scale(1.025);
-    transition: all 0.15s ease; }
-  /* line 25, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/state/_is-scaled.scss */
+    transform: scale(1.1); }
+  /* line 19, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/state/_is-scaled.scss */
   .is-scaled:active {
     z-index: +1;
-    transform: scale(1.015);
-    transition: all 0.15s ease; }
+    transform: scale(1.05); }

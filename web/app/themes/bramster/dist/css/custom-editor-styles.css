@@ -1348,7 +1348,7 @@ a.more-link {
   background-color: #006c90;
   font-weight: 600;
   color: #F9F9F9;
-  transition: background-color 0.15s; }
+  transition: all 0.15s ease-in-out, background-color 0.15s; }
   /* line 9, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_more-link.scss */
   a.more-link:hover, a.more-link:focus {
     background-color: #009cd0; }

@@ -3,11 +3,11 @@
 	margin-bottom: $vertical-margin * 2 !important;
 	
 	padding-top: 56.25%;  /* slope */
-	background: darken($grey,25%);
+	background: darken($grey-50,25%);
 	background-size: cover;
 	-moz-background-size: cover;  /* Firefox 3.6 */
 	background-position: center;  /* Internet Explorer 7/8 */
-	border-bottom: darken($grey,25%) 1px solid;
+	border-bottom: darken($grey-50,25%) 1px solid;
 
 	line-height: 0;
 

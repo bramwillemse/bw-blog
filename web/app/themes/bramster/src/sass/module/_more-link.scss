@@ -4,7 +4,7 @@ a.more-link {
 	font-weight: 600;
 	color: $white;
 
-	transition: background-color 0.15s;
+	transition: all 0.15s ease-in-out, background-color 0.15s;
 
 	&:hover,
 	&:focus {
