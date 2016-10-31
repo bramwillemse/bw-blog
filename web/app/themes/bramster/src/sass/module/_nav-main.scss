@@ -3,13 +3,16 @@
 	max-height: 0;
 	width: 100%;
 	overflow: hidden;
-
+    margin: 0;
+    
 	background: $grey-50;
 
 	line-height: 2px;
 	text-align: center;
 
-	li {
+    transition: max-height 0.333s ease-in; // animate expand/collapse on small screens
+
+    li { 
 		@include grid(24);
 	}
 
@@ -25,16 +28,17 @@
  	}
 
  	@include breakpoint(small) {
- 		display: block !important;
+ 		display: block;
+        vertical-align: middle;
  		width: auto;
- 		margin: 0;
+ 		margin: 0 $vertical-margin 0 0;
  		max-height: none;
 
 		border: none;
 		background-color: transparent;
 
 		font-size: 0;
-	 	text-align: center;
+        text-align: center;
 
 		li {
 			@include grid-reset;
@@ -47,12 +51,11 @@
 	 	}
  	}
 
-	@include breakpoint(medium) {
-		text-align: left;
-	}
+    @include breakpoint(medium) {
+        display: inline-block;
+        text-align: left;
+    }
 
-	transition: max-height 0.333s ease-in; // animate expand/collapse on small screens
-	
 	&.is-visible {
 		max-height: 10em;
 	}

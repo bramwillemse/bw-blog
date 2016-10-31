@@ -1,14 +1,28 @@
 .footer {
-	padding: 3rem 0;
+	padding: $vertical-margin 0 $vertical-margin*3;
 	background-color: $grey-50;
 
 	color: $white;
 	text-align: left;
+
+    @include breakpoint(small) {
+        text-align: center;
+    }
+
+    @include breakpoint(medium) {
+        padding-top: 3rem;
+
+        text-align: left;
+    }
 }
 
     // Site credits / company info
     .footer__content {
-        @include grid(36,12,1);
+        display: inline-block;
+        vertical-align: middle;
+        margin: $vertical-margin;
+
+        @include font-size($font-small,1);
 
         h3 {
             color: $white;

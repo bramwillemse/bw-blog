@@ -4,7 +4,11 @@
     Houses logo, main menu and possibly more
 */
 .toolbar {
+    // margin-bottom: $vertical-margin*2;
+
 	@include breakpoint(small) {
+        margin-bottom: 0;
+
 		padding-bottom: $vertical-margin * 2;
 	}
 
@@ -30,15 +34,15 @@
 }
 
     // WordPress-page specific styling
-    .single sheader-toolbar,
-    .page .header-toolbar {
+    .single .toolbar,
+    .page .toolbar {
     	margin-bottom: 0;
     }
 
-    .archive .header-toolbar {
+    .archive .toolbar {
     	margin-bottom: $vertical-margin;
     }
 
-    .blog .header-toolbar {
+    .blog .toolbar {
     	margin-bottom: $vertical-margin;
     }
