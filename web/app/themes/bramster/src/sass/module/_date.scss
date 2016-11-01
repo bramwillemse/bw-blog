@@ -7,6 +7,6 @@
 	color: $black;
 
 	@include breakpoint(medium) {
-		@include font-size($font-medium);
+		@include font-size($font-medium, 1.5);
 	}
 }

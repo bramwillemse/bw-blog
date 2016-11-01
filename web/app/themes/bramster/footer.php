@@ -5,7 +5,6 @@
                 <span class="logo-description"><?php bloginfo('description'); ?></span>
             </div>
             
-            <?php get_template_part('inc/nav-mobile') ?>
             <?php get_template_part('inc/nav-main') ?>
 
             <div class="footer__content">
