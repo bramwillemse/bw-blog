@@ -112,6 +112,6 @@
 @mixin font-size($sizeValue: 1, $line: $sizeValue * 1.5){
   //font-size: ($sizeValue * 15) + px;
   //line-height: ($line * 15) + px;
-  font-size: $sizeValue + em;
-  line-height: $line + em;
+  font-size: $sizeValue + rem;
+  line-height: $line;
 }

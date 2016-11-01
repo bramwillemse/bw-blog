@@ -4,8 +4,6 @@
     Houses logo, main menu and possibly more
 */
 .toolbar {
-    // margin-bottom: $vertical-margin*2;
-
 	@include breakpoint(small) {
         margin-bottom: 0;
 

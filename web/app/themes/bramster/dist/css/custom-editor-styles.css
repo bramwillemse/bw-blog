@@ -1119,8 +1119,8 @@ h1, h2, h3 {
 /* line 28, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
 h1 {
   margin-bottom: 1.25rem;
-  font-size: 1.6em;
-  line-height: 1em; }
+  font-size: 1.6rem;
+  line-height: 1; }
   /* line 33, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
   h1 a {
     color: #333;
@@ -1135,14 +1135,14 @@ h1 {
     /* line 28, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
     h1 {
       margin-bottom: 1rem;
-      font-size: 2em;
-      line-height: 1em; } }
+      font-size: 2rem;
+      line-height: 1; } }
   @media screen and (min-width: 55em) {
     /* line 28, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
     h1 {
       margin-bottom: 0.66667rem;
-      font-size: 3em;
-      line-height: 1em; } }
+      font-size: 3rem;
+      line-height: 1; } }
 
 /* line 59, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
 h1 a:hover {
@@ -1150,22 +1150,22 @@ h1 a:hover {
 
 /* line 60, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
 h2 {
-  font-size: 1.2em;
-  line-height: 1em;
+  font-size: 1.2rem;
+  line-height: 1;
   margin-top: 1.66667rem;
   margin-bottom: 0.83333rem; }
   @media screen and (min-width: 55em) {
     /* line 60, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
     h2 {
-      font-size: 1.6em;
-      line-height: 1em;
+      font-size: 1.6rem;
+      line-height: 1;
       margin-top: 1.25rem;
       margin-bottom: 0.625rem; } }
 
 /* line 72, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
 h3 {
-  font-size: 1em;
-  line-height: 1em;
+  font-size: 1rem;
+  line-height: 1;
   margin-top: 2rem;
   margin-bottom: 1rem; }
 
@@ -1223,8 +1223,8 @@ blockquote {
   /* line 216, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
   blockquote p {
     font-family: Georgia, serif;
-    font-size: 1em;
-    line-height: 1.5em;
+    font-size: 1rem;
+    line-height: 1.5;
     font-style: italic; }
 
 /* line 223, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/_base.scss */
@@ -1364,8 +1364,8 @@ a.more-link {
   @media screen and (min-width: 55em) {
     /* line 1, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/module/_lead.scss */
     .lead {
-      font-size: 1.2em;
-      line-height: 1.8em;
+      font-size: 1.2rem;
+      line-height: 1.8;
       margin-bottom: 0.83333em; } }
 
 /* line 19, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/custom-editor-styles.scss */
