@@ -20,10 +20,6 @@ body {
 	font-size: $font-size;
 	line-height: 1.5em;
 	color: $grey-50;
-
-    @include breakpoint(small) {
-        // font-size: 
-    }
 }
 
 h1, 

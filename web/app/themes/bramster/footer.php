@@ -1,8 +1,8 @@
 	<footer id="footer" class="l-footer footer">
         <div class="toolbar toolbar--footer">
             <div class="logo column column-small">
-                <span class="logo-name"><?php bloginfo('name'); ?></span>
-                <span class="logo-description"><?php bloginfo('description'); ?></span>
+                <span class="logo__name"><?php bloginfo('name'); ?></span>
+                <span class="logo__description"><?php bloginfo('description'); ?></span>
             </div>
             
             <?php get_template_part('inc/nav-main') ?>

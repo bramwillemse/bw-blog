@@ -4,14 +4,19 @@
     Houses logo, main menu and possibly more
 */
 .toolbar {
-	@include breakpoint(small) {
-        margin-bottom: 0;
+    position: relative;
+    @include grid(48,1);
 
-		padding-bottom: $vertical-margin * 2;
+    font-size: 0;
+
+	@include breakpoint(small) {
+		margin-top: $vertical-margin;
+        margin-bottom: $vertical-margin;
 	}
 
 	@include breakpoint(medium) {
-		padding-top: $vertical-margin * 2;
+        margin-top: $vertical-margin*2;
+        margin-bottom: $vertical-margin*2;
 	}
 
     &--footer {
@@ -30,17 +35,3 @@
         } 
     }    
 }
-
-    // WordPress-page specific styling
-    .single .toolbar,
-    .page .toolbar {
-    	margin-bottom: 0;
-    }
-
-    .archive .toolbar {
-    	margin-bottom: $vertical-margin;
-    }
-
-    .blog .toolbar {
-    	margin-bottom: $vertical-margin;
-    }

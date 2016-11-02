@@ -1,4 +1,10 @@
-.header-article {
+/* 
+ * Header Image
+ *
+ * Page header with a background image and an overlaying header text
+ */
+.header-image {
+    position: relative;
 	margin-bottom: $vertical-margin;
 
 	padding-top: 33%;  /* slope */

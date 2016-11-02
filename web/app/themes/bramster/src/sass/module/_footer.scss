@@ -1,16 +1,12 @@
 .footer {
-	padding: $vertical-margin 0 $vertical-margin*3;
+	padding: $vertical-margin 0;
 	background-color: $grey-50;
 
 	color: $white;
 	text-align: left;
 
-    @include breakpoint(small) {
-        text-align: center;
-    }
-
     @include breakpoint(medium) {
-        padding-top: 3rem;
+        padding: $vertical-margin*2 0;
 
         text-align: left;
     }
