@@ -36,7 +36,7 @@
       "package": {
         "name": "advanced-custom-fields/acf-pro",
         "type": "wordpress-plugin",
-        "version": "5.4.5",
+        "version": "5.4.8",
         "dist": {
           "type": "zip",
           "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9MzM5OTN8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE0LTA3LTA5IDEwOjAwOjEz"
@@ -50,7 +50,7 @@
       "type": "package",
       "package": {
         "name": "deliciousbrains/wp-migrate-db-pro",
-        "version": "1.6.1",
+        "version": "1.7",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
@@ -65,7 +65,7 @@
       "type": "package",
       "package": {
         "name": "deliciousbrains/wp-migrate-db-pro-media-files",
-        "version": "1.4.5",
+        "version": "1.4.6",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
@@ -105,6 +105,21 @@
           "composer/installers": "*"
         }
       }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "baardbaard/bb-twitterfeed",
+        "type": "wordpress-plugin",
+        "version": "0.4",
+        "dist": {
+          "type": "zip",
+          "url":  "https://github.com/baardbaard/bb-twitterfeed/archive/master.zip"
+        },
+        "require" : {
+          "composer/installers": "*"
+        }
+      }
     }
   ],
   "require": {
@@ -117,15 +132,17 @@
       "advanced-custom-fields/acf-pro": "*",
       "deliciousbrains/wp-migrate-db-pro": "*",
       "deliciousbrains/wp-migrate-db-pro-media-files": "*",
+      "wpackagist-plugin/disqus-comment-system": "*",
       "wpackagist-plugin/ewww-image-optimizer": "*",
+      "wpackagist-plugin/google-analytics-for-wordpress": "*",
       "wpackagist-plugin/iwp-client": "*",
       "wpackagist-plugin/wordpress-importer": "*",
       "wpackagist-plugin/wordpress-seo": "*",
-      "wpackagist-plugin/disqus-comment-system": "*",
-      "wpackagist-plugin/google-analytics-for-wordpress": "*",
+      "wpackagist-plugin/worker": "*",
       "wpackagist-plugin/wp-super-cache": "*",
     "bramwillemse/wp-normalize": "*",
-    "bramwillemse/bramwillemsenl-setup": "*"
+    "bramwillemse/bramwillemsenl-setup": "*",
+    "baardbaard/bb-twitterfeed": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"

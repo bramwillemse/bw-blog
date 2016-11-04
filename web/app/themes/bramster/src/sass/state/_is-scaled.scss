@@ -2,34 +2,26 @@
 	position: relative; 
 
 	// Zoom effect transition
-	-webkit-transform-origin: center;
-	-moz-transform-origin: center;
-	-o-transform-origin: center;
-	transform-origin: center;
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: left center;
+	-o-transform-origin: left center;
+	transform-origin: left center;
 
-	@include transition(all 0.15s ease);
+	@include transition(all 0.333s ease-in-out);
 
 	&:hover, 
 	&:focus  {
-		// z-index: +1;
-
-		-webkit-transform: scale(1.025);
-		// -webkit-transform:rotate(-1.5deg);
-		-moz-transform: scale(1.025);
-		-o-transform: scale(1.025);
-		transform: scale(1.025);
-
-		@include transition(all 0.15s ease);
-
+		-webkit-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+		-o-transform: scale(1.1);
+		transform: scale(1.1);
 	}
 	&:active {
 		z-index: +1;
 
-		-webkit-transform: scale(1.015);
-		-moz-transform: scale(1.015);
-		-o-transform: scale(1.015);
-		transform: scale(1.015);
-
-		@include transition(all 0.15s ease);
+		-webkit-transform: scale(1.05);
+		-moz-transform: scale(1.05);
+		-o-transform: scale(1.05);
+		transform: scale(1.05);
 	}
 }

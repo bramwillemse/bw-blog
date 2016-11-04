@@ -1,15 +1,26 @@
 .nav {
-	text-align: center; 
-	line-height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+
+    width: auto;
+    margin: 0 $vertical-margin 0 0;
+    max-height: none;
+
+    border: none;
+    background-color: transparent;
+
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
 
 	@include breakpoint(medium) {
 		text-align: left;
 	}
 
 	li { 
-		display: inline;
 		display: inline-block;
 		overflow: hidden;
+
 		list-style: none;
 
 		@include breakpoint(medium) {
@@ -18,14 +29,13 @@
 	} 
 
 	a { 
-		display: inline;
 		display: inline-block; 
 	 	width: auto;
 
-	 	padding: 0.3em 0.6em;
-	 	background-color: $grey;
+        padding: 1em 0.6em;
+	 	background-color: $grey-50;
 
-		@include font-size($font-medium);
+        @include font-size($font-normal,1);
 	 	color: $white;
 	 	font-weight: 400;
 
@@ -38,7 +48,19 @@
 		&:active{
 			background-color: darken($first,5%);
 		}
-	}
+	
+        @include breakpoint(small) {
+            padding: 0.8em 0.6em;
+
+            @include font-size($font-medium,1);
+        }                
+    }
+    
+    @include breakpoint(medium) {
+        display: inline-block;
+        text-align: left;
+    }
+
 
  	.current-menu-item a,
  	.current_page_parent a,

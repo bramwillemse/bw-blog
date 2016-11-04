@@ -4,6 +4,6 @@
     $headerimg = $img[0];
 ?>
 
-<header class="header header-article" style="background-image: url('<?php echo $headerimg; ?>');">
+<header class="header-image" style="background-image: url('<?php echo $headerimg; ?>');">
     <h1 class="l-column l-column-big"><?php the_title(); ?></h1>
-</header><!-- /.post-header -->
+</header>

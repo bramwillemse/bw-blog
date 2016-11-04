@@ -1,16 +1,23 @@
 'use strict';
 
 // Javascript
-
 // Required modules
-var gulp = require('gulp'); 
+var gulp = require('gulp');
+var source = require('vinyl-source-stream');
+var buffer = require('vinyl-buffer');
+var rename = require('gulp-rename');
 var debug = require('gulp-debug');
+
+var browserify = require('browserify');
+var babelify = require('babelify');
+
 var sourcemaps = require('gulp-sourcemaps');
 var jshint = require('gulp-jshint');
-var concat = require('gulp-concat');
+var buffer = require('vinyl-buffer');
 var uglify = require('gulp-uglify');
-var rename = require('gulp-rename');
 
+var browserSync = require('browser-sync');
+var reload = browserSync.reload;
 
 
 // Settings
@@ -21,24 +28,28 @@ var uglifyOptions = {
     };
 
 
-
 // Main scripts task
-gulp.task('scripts', ['scripts:lint'], function() {
-    return gulp.src([
-        './src/js/**/*.js'
-        // '!./src/js/**/_*.js'
-    ])
-    .pipe(debug({title: 'src:'}))
-    .pipe(sourcemaps.init())
-    .pipe(concat('scripts.js'))
+//Convert ES6 ode in all js files in src/js folder and copy to
+//build folder as bundle.js
+gulp.task('scripts', ['scripts:lint'], function(){
+    return browserify({
+        entries: ['./src/js/main.js'],
+        debug: true
+    })
+    .transform(babelify.configure({
+        presets : ['es2015'],
+        sourceMaps: true
+    }))
+    .bundle()
+    .pipe(source('main.js'))
+    .pipe(buffer()) // <----- convert from streaming to buffered vinyl file object
     .pipe(uglify(uglifyOptions))
-    .pipe(debug({title: 'uglify:'}))
     .pipe(rename({
         suffix: '.min'
     }))
-    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./dist/js'))
-    .pipe(debug({title: 'dest:'}));
+    .pipe(sourcemaps.write('.'))
+    .pipe(reload({stream:true}))
 });
 
 

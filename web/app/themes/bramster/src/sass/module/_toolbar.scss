@@ -1,0 +1,37 @@
+/*
+    Header toolbar
+
+    Houses logo, main menu and possibly more
+*/
+.toolbar {
+    position: relative;
+    @include grid(48,1);
+
+    font-size: 0;
+
+	@include breakpoint(small) {
+		margin-top: $vertical-margin;
+        margin-bottom: $vertical-margin;
+	}
+
+	@include breakpoint(medium) {
+        margin-top: $vertical-margin*2;
+        margin-bottom: $vertical-margin*2;
+	}
+
+    &--footer {
+        padding: 0;
+
+        .nav-main a {
+            background-color: $grey-80;
+        }
+
+        @include breakpoint(small) {
+            padding-bottom: 0;
+        }
+
+        @include breakpoint(medium) {
+            padding-top: 0;
+        } 
+    }    
+}

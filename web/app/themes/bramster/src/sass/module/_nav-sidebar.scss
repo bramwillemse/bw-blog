@@ -30,8 +30,8 @@
 		&.current-cat a,
 		&.current-menu-item a,
 		&.current_page_item a { 
-			background: $first; 
-			color: $white;
+			background: $second; 
+			color: $black;
 		}
 		@include breakpoint(medium) {
 			float: right;

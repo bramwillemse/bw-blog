@@ -1,10 +1,16 @@
-.header-article {
+/* 
+ * Header Image
+ *
+ * Page header with a background image and an overlaying header text
+ */
+.header-image {
+    position: relative;
 	margin-bottom: $vertical-margin;
 
 	padding-top: 33%;  /* slope */
 	height: 225px;  /* start height */
 
-	background: darken($grey,25%);
+	background: darken($grey-50,25%);
 
 	background-size: cover;
 	-moz-background-size: cover;  /* Firefox 3.6 */

@@ -8,7 +8,7 @@
 	'container_id'    => '',
 
 	// set classes & id
-	'menu_class'      => 'nav nav-main column', 
+	'menu_class'      => 'nav nav--main column', 
 	'menu_id'         => 'nav-main',
 
 	'echo'            => true,
