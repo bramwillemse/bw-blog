@@ -14,8 +14,13 @@
     text-align: center;
 
 	@include breakpoint(medium) {
+        @include grid(36,0.5);
 		text-align: left;
 	}
+
+    @include breakpoint(normal) {
+        @include grid(36);
+    }
 
 	li { 
 		display: inline-block;
@@ -23,8 +28,8 @@
 
 		list-style: none;
 
-		@include breakpoint(medium) {
-			float: left;
+		@include breakpoint(medium) {            
+            text-align: left;
 		}
 	} 
 
@@ -56,12 +61,6 @@
         }                
     }
     
-    @include breakpoint(medium) {
-        display: inline-block;
-        text-align: left;
-    }
-
-
  	.current-menu-item a,
  	.current_page_parent a,
  	.current-page-ancestor a { 

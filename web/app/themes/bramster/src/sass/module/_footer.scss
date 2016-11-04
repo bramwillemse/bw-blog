@@ -14,11 +14,16 @@
 
     // Site credits / company info
     .footer__content {
-        display: inline-block;
+        @include grid(48);
         vertical-align: middle;
-        margin: $vertical-margin;
+        margin: $vertical-margin 0;
 
         @include font-size($font-small,1);
+
+        @include breakpoint(medium) {
+            @include grid(36,12,0);
+        }
+
 
         h3 {
             color: $white;

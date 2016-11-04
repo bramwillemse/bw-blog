@@ -1,11 +1,11 @@
 /*
-    Header toolbar
-
-    Houses logo, main menu and possibly more
+ * Toolbar
+ *
+ * Houses logo, main menu and more (?)
 */
 .toolbar {
+    @include grid(48,2);
     position: relative;
-    @include grid(48,1);
 
     font-size: 0;
 
@@ -15,14 +15,20 @@
 	}
 
 	@include breakpoint(medium) {
+        @include grid(48);
         margin-top: $vertical-margin*2;
         margin-bottom: $vertical-margin*2;
 	}
 
+    /* 
+     * Footer version of toolbar
+     * 
+     * Houses logo, main menu and company details
+     */
     &--footer {
         padding: 0;
 
-        .nav-main a {
+        .nav a {
             background-color: $grey-80;
         }
 
