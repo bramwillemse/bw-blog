@@ -2408,15 +2408,6 @@ img.aligncenter {
 /*
  * Layout: Header
  */
-/* line 4, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/layout/_l-header.scss */
-.l-header {
-  float: left;
-  width: 95.83333%;
-  margin-left: 2.08333%;
-  margin-right: 2.08333%;
-  position: relative;
-  font-size: 0; }
-
 /* line 1, /Users/bramwillemse/Dropbox/Sites/brw/web/app/themes/bramster/src/sass/layout/_l-footer.scss */
 .l-footer {
   float: left;

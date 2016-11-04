@@ -50,7 +50,7 @@
       "type": "package",
       "package": {
         "name": "deliciousbrains/wp-migrate-db-pro",
-        "version": "1.6.1",
+        "version": "1.7",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
@@ -65,7 +65,7 @@
       "type": "package",
       "package": {
         "name": "deliciousbrains/wp-migrate-db-pro-media-files",
-        "version": "1.4.5",
+        "version": "1.4.6",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
@@ -132,12 +132,13 @@
       "advanced-custom-fields/acf-pro": "*",
       "deliciousbrains/wp-migrate-db-pro": "*",
       "deliciousbrains/wp-migrate-db-pro-media-files": "*",
+      "wpackagist-plugin/disqus-comment-system": "*",
       "wpackagist-plugin/ewww-image-optimizer": "*",
+      "wpackagist-plugin/google-analytics-for-wordpress": "*",
       "wpackagist-plugin/iwp-client": "*",
       "wpackagist-plugin/wordpress-importer": "*",
       "wpackagist-plugin/wordpress-seo": "*",
-      "wpackagist-plugin/disqus-comment-system": "*",
-      "wpackagist-plugin/google-analytics-for-wordpress": "*",
+      "wpackagist-plugin/worker": "*",
       "wpackagist-plugin/wp-super-cache": "*",
     "bramwillemse/wp-normalize": "*",
     "bramwillemse/bramwillemsenl-setup": "*",

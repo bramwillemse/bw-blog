@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7ee361a6ead45bc25e50d7188ec52590",
-    "content-hash": "f4d47c104e2c6a1f9c83adb2c8f043bb",
+    "hash": "5dc536e715e8cb3af31b2efea887af21",
+    "content-hash": "31afe5cb3bc4e01bef85631be9277c1f",
     "packages": [
         {
             "name": "advanced-custom-fields/acf-pro",
@@ -165,7 +165,7 @@
         },
         {
             "name": "deliciousbrains/wp-migrate-db-pro",
-            "version": "1.6.1",
+            "version": "1.7",
             "dist": {
                 "type": "zip",
                 "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-latest.zip?licence_key=f18a15ff-0c4d-400f-aea5-a9f4bd0d2fa4&site_url=bramwillemse.nl",
@@ -179,7 +179,7 @@
         },
         {
             "name": "deliciousbrains/wp-migrate-db-pro-media-files",
-            "version": "1.4.5",
+            "version": "1.4.6",
             "dist": {
                 "type": "zip",
                 "url": "https://deliciousbrains.com/?wc-api=delicious-brains&request=download&licence_key=f18a15ff-0c4d-400f-aea5-a9f4bd0d2fa4&slug=wp-migrate-db-pro-media-files&site_url=bramwillemse.nl",
@@ -447,15 +447,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "3.1.2",
+            "version": "3.1.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/3.1.2"
+                "reference": "tags/3.1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.3.1.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.3.1.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -544,6 +544,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-seo/"
+        },
+        {
+            "name": "wpackagist-plugin/worker",
+            "version": "4.2.12",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/worker/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/worker.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/worker/"
         },
         {
             "name": "wpackagist-plugin/wp-super-cache",
