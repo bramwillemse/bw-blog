@@ -81,7 +81,7 @@
       "package": {
         "name": "bramwillemse/wp-normalize",
         "type": "wordpress-plugin",
-        "version": "1.0.5",
+        "version": "1.0.6",
         "dist": {
           "type": "zip",
           "url":  "https://github.com/bramwillemse/wp-normalize/archive/master.zip"
@@ -96,7 +96,7 @@
       "package": {
         "name": "bramwillemse/bramwillemsenl-setup",
         "type": "wordpress-plugin",
-        "version": "0.4.1",
+        "version": "0.4.2",
         "dist": {
           "type": "zip",
           "url":  "https://github.com/bramwillemse/bramwillemsenl-setup/archive/master.zip"
