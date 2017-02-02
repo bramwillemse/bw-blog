@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "31afe5cb3bc4e01bef85631be9277c1f",
+    "content-hash": "511f2062cf5c71e64d7470bec0bba394",
     "packages": [
         {
             "name": "advanced-custom-fields/acf-pro",
@@ -22,7 +22,7 @@
         },
         {
             "name": "baardbaard/bb-twitterfeed",
-            "version": "0.4",
+            "version": "0.5",
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/baardbaard/bb-twitterfeed/archive/master.zip",
@@ -36,7 +36,7 @@
         },
         {
             "name": "bramwillemse/bramwillemsenl-setup",
-            "version": "0.4.1",
+            "version": "0.4.2",
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/bramwillemse/bramwillemsenl-setup/archive/master.zip",
@@ -50,7 +50,7 @@
         },
         {
             "name": "bramwillemse/wp-normalize",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/bramwillemse/wp-normalize/archive/master.zip",
