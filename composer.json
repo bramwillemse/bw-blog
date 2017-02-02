@@ -50,7 +50,7 @@
       "type": "package",
       "package": {
         "name": "deliciousbrains/wp-migrate-db-pro",
-        "version": "1.7",
+        "version": "1.7.1",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
@@ -65,7 +65,7 @@
       "type": "package",
       "package": {
         "name": "deliciousbrains/wp-migrate-db-pro-media-files",
-        "version": "1.4.6",
+        "version": "1.4.7",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
