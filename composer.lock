@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "511f2062cf5c71e64d7470bec0bba394",
+    "content-hash": "2ccd64037e222f92052a1ebdf1a527dc",
     "packages": [
         {
             "name": "advanced-custom-fields/acf-pro",
@@ -164,7 +164,7 @@
         },
         {
             "name": "deliciousbrains/wp-migrate-db-pro",
-            "version": "1.7",
+            "version": "1.7.1",
             "dist": {
                 "type": "zip",
                 "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-latest.zip?licence_key=f18a15ff-0c4d-400f-aea5-a9f4bd0d2fa4&site_url=bramwillemse.nl",
@@ -178,7 +178,7 @@
         },
         {
             "name": "deliciousbrains/wp-migrate-db-pro-media-files",
-            "version": "1.4.6",
+            "version": "1.4.7",
             "dist": {
                 "type": "zip",
                 "url": "https://deliciousbrains.com/?wc-api=delicious-brains&request=download&licence_key=f18a15ff-0c4d-400f-aea5-a9f4bd0d2fa4&slug=wp-migrate-db-pro-media-files&site_url=bramwillemse.nl",
@@ -192,16 +192,16 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.6.1",
+            "version": "4.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "aca8da84b4a699b16b8bcc96d2bc794a4c7b5ae3"
+                "reference": "ac7b1792641d1fb61cb2901db292903b31694057"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/aca8da84b4a699b16b8bcc96d2bc794a4c7b5ae3",
-                "reference": "aca8da84b4a699b16b8bcc96d2bc794a4c7b5ae3",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/ac7b1792641d1fb61cb2901db292903b31694057",
+                "reference": "ac7b1792641d1fb61cb2901db292903b31694057",
                 "shasum": ""
             },
             "require": {
@@ -225,7 +225,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2016-09-07T15:01:47+00:00"
+            "time": "2017-01-26T18:32:19+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
