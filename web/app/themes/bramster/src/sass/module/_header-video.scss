@@ -4,6 +4,7 @@
  * Header containing an embedded, full-width video 
  */
 .header-video { 
+    position: relative;
 	height: 225px;  /* start height */
 	margin-bottom: $vertical-margin * 2 !important;
 	
