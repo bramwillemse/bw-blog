@@ -9,16 +9,22 @@
 
     font-size: 0;
 
-	@include breakpoint(small) {
-		margin-top: $vertical-margin;
+    // MEDIA QUERIES
+    @include breakpoint(small) {
+        margin-top: $vertical-margin;
         margin-bottom: $vertical-margin;
-	}
+    }
 
-	@include breakpoint(medium) {
-        @include grid(48);
+    @include breakpoint(medium) {
+        @include grid(36,13,0);
         margin-top: $vertical-margin*2;
         margin-bottom: $vertical-margin*2;
-	}
+    }
+
+    @include breakpoint(normal) {
+        @include grid(32,12,0.5);
+    }
+
 
     /* 
      * Footer version of toolbar

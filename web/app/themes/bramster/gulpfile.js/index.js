@@ -2,7 +2,7 @@
 
 // Default Gulp task
 // Include all gulp files
-require('require-dir')('./gulp', {recurse: true});
+require('require-dir')('./', {recurse: true});
 
 
 // Required modules
@@ -16,4 +16,10 @@ gulp.task('default', [
     'scripts',
     'serve',
     'watch'
+]);
+
+// Run production build task
+gulp.task('default', [
+    'style',
+    'scripts'
 ]);
