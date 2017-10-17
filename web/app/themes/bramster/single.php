@@ -16,10 +16,6 @@
                     	<?php the_category(' '); ?>
                 </footer><!-- /.postmetadata -->
 
-                <div id="comments" class="comments">
-                    <?php comments_template(); ?>
-                </div><!-- /#comments -->
-
             </div><!-- /.column -->
 
             <?php get_template_part('inc/widgets-left'); ?>
