@@ -3336,7 +3336,10 @@ a.more-link {
 
 /* line 16, /Users/bramwillemse/Dropbox/Sites/bwb/web/app/themes/bramster/src/sass/module/_footer.scss */
 .footer__content {
-  display: inline-block;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
   vertical-align: middle;
   margin: 1rem 0;
   font-size: 0.75rem;
