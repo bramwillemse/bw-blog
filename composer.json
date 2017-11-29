@@ -36,40 +36,10 @@
       "package": {
         "name": "advanced-custom-fields/acf-pro",
         "type": "wordpress-plugin",
-        "version": "5.4.8",
+        "version": "5.6.3",
         "dist": {
           "type": "zip",
           "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9MzM5OTN8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE0LTA3LTA5IDEwOjAwOjEz"
-        },
-        "require" : {
-          "composer/installers": "*"
-        }
-      }
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "deliciousbrains/wp-migrate-db-pro",
-        "version": "1.7.1",
-        "type": "wordpress-plugin",
-        "dist": {
-          "type": "zip",
-          "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-latest.zip?licence_key=f18a15ff-0c4d-400f-aea5-a9f4bd0d2fa4&site_url=bramwillemse.nl"
-        },
-        "require" : {
-          "composer/installers": "*"
-        }
-      }
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "deliciousbrains/wp-migrate-db-pro-media-files",
-        "version": "1.4.7",
-        "type": "wordpress-plugin",
-        "dist": {
-          "type": "zip",
-          "url": "https://deliciousbrains.com/?wc-api=delicious-brains&request=download&licence_key=f18a15ff-0c4d-400f-aea5-a9f4bd0d2fa4&slug=wp-migrate-db-pro-media-files&site_url=bramwillemse.nl"
         },
         "require" : {
           "composer/installers": "*"
@@ -105,44 +75,23 @@
           "composer/installers": "*"
         }
       }
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "baardbaard/bb-twitterfeed",
-        "type": "wordpress-plugin",
-        "version": "0.5",
-        "dist": {
-          "type": "zip",
-          "url":  "https://github.com/baardbaard/bb-twitterfeed/archive/master.zip"
-        },
-        "require" : {
-          "composer/installers": "*"
-        }
-      }
     }
   ],
   "require": {
     "php": ">=5.5",
     "composer/installers": "~1.0.12",
     "vlucas/phpdotenv": "^2.0.1",
-    "johnpbloch/wordpress": "4.7.2",
+    "johnpbloch/wordpress": "4.9",
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
       "advanced-custom-fields/acf-pro": "*",
-      "deliciousbrains/wp-migrate-db-pro": "*",
-      "deliciousbrains/wp-migrate-db-pro-media-files": "*",
-      "wpackagist-plugin/disqus-comment-system": "*",
       "wpackagist-plugin/ewww-image-optimizer": "*",
       "wpackagist-plugin/google-analytics-for-wordpress": "*",
-      "wpackagist-plugin/iwp-client": "*",
       "wpackagist-plugin/wordpress-importer": "*",
       "wpackagist-plugin/wordpress-seo": "*",
-      "wpackagist-plugin/worker": "*",
       "wpackagist-plugin/wp-super-cache": "*",
     "bramwillemse/wp-normalize": "*",
-    "bramwillemse/bramwillemsenl-setup": "*",
-    "baardbaard/bb-twitterfeed": "*"
+    "bramwillemse/bramwillemsenl-setup": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"

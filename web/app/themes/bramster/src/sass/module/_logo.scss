@@ -4,24 +4,21 @@
     width: auto;
     margin-right: $vertical-margin;
 
-	padding: 0.5rem 0;
+	padding: 1rem 0;
 
 	text-decoration: none;
 	text-align: left;
 
 	// Transitions
-	@include transition(background-color 0.15s);
-	@include transition(color 0.15s);
+	@include transition(background-color .15s);
+	@include transition(color .15s);
 
 	@include breakpoint(medium) {
-        @include grid(12,0.5);
-		padding: 0.5rem 0;
-
-		text-align: right;
+		padding: 0;
 	}
 
-    @include breakpoint(normal) {
-        @include grid(12,1);
+    &--inline {
+        margin-right: 1rem;
     }
 
     &__name {
@@ -29,7 +26,7 @@
 
         @include font-size($font-small,1);
         text-transform: uppercase;
-        letter-spacing: 0.075em;
+        letter-spacing: .075em;
         font-weight: 600;
 
         @include breakpoint(small) {
